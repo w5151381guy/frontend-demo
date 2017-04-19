@@ -8,6 +8,7 @@
 
 ### [Codepen 001](#)
 
+- [CSS text-align Property](https://www.w3schools.com/cssref/pr_text_text-align.asp)
 - [CSS 垂直置中的三個方法](http://www.oxxostudio.tw/articles/201408/css-vertical-align.html)
 - [CSS 垂直置中的七個方法](http://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html)
 
