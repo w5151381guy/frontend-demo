@@ -6,7 +6,8 @@
 
 ---
 
-### [Codepen 001](#)
+### [Codepen 001-Andy](https://codepen.io/Andy-Chen/pen/ybeLxX?editors=1100)
+### [Codepen 001-Larry](https://codepen.io/larrylu/pen/XRXWbR?editors=1100)
 
 - [CSS text-align Property](https://www.w3schools.com/cssref/pr_text_text-align.asp)
 - [CSS 垂直置中的三個方法](http://www.oxxostudio.tw/articles/201408/css-vertical-align.html)
