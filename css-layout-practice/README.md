@@ -1,6 +1,6 @@
 # CSS Layout
 
-### [Codepen 000](https://codepen.io/larrylu/pen/BRNxdY)
+### [Codepen 000](https://codepen.io/larrylu/pen/BRNxdY?editors=0010)
 
 ![](img/000.png)
 
