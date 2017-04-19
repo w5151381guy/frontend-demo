@@ -1,7 +1,6 @@
 # CSS Layout
 
-### 
-<a href="https://codepen.io/larrylu/pen/BRNxdY" target="_blank"> Codepen 000 </a>
+### [Codepen 000](https://codepen.io/larrylu/pen/BRNxdY)
 
 ![](img/001.png)
 
