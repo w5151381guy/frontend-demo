@@ -18,13 +18,23 @@
 
 ---
 
-### [Codepen 002-Andy](#)
-### [Codepen 002-Larry](#)
+### [Codepen 002-Andy](https://codepen.io/Andy-Chen/pen/rmxeJO?editors=1100)
+### [Codepen 002-Larry](https://codepen.io/larrylu/pen/zwrvba?editors=1100)
 
 - [深入解析 CSS Flexbox](http://www.oxxostudio.tw/articles/201501/css-flexbox.html)
 - [CSS3 border-radius Property](https://www.w3schools.com/cssref/css3_pr_border-radius.asp)
 - [CSS - 百分比寬度](http://zh-tw.learnlayout.com/percent.html)
 
 ![](img/002.png)
+
+---
+
+### [Codepen 003-Andy](#)
+### [Codepen 003-Larry](#)
+ 
+> 每個 div 的高度都是 200px
+> 顏色分別是 gray, blue, red
+
+![](img/003.png)
 
 ---
