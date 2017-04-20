@@ -29,8 +29,8 @@
 
 ---
 
-### [Codepen 003-Andy](#)
-### [Codepen 003-Larry](#)
+### [Codepen 003-Andy](https://codepen.io/Andy-Chen/pen/PmZLVo)
+### [Codepen 003-Larry](https://codepen.io/larrylu/pen/YVwrGV)
 
 - [选择器(Selectors)](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started/Selectors)
 - [CSS中的多重選擇器](https://pjchender.blogspot.tw/2015/03/cssmultiple-selectorsspace.html)
@@ -40,5 +40,15 @@
 > 顏色分別是 gray, blue, red
 
 ![](img/003.png)
+
+---
+
+### [Codepen 004-Andy](#)
+### [Codepen 004-Larry](#)
+ 
+> 把整個頁面分成三個 column <br />
+> 只有中間那個 column 可以用滑鼠上下滾動
+
+![](img/004.png)
 
 ---
