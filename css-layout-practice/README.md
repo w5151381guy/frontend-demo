@@ -32,7 +32,7 @@
 ### [Codepen 003-Andy](#)
 ### [Codepen 003-Larry](#)
  
-> 每個 div 的高度都是 200px
+> 每個 div 的高度都是 200px <br />
 > 顏色分別是 gray, blue, red
 
 ![](img/003.png)
