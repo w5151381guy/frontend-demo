@@ -17,3 +17,14 @@
 ![](img/001.png)
 
 ---
+
+### [Codepen 002-Andy](#)
+### [Codepen 002-Larry](#)
+
+- [深入解析 CSS Flexbox](http://www.oxxostudio.tw/articles/201501/css-flexbox.html)
+- [CSS3 border-radius Property](https://www.w3schools.com/cssref/css3_pr_border-radius.asp)
+- [CSS - 百分比寬度](http://zh-tw.learnlayout.com/percent.html)
+
+![](img/002.png)
+
+---
