@@ -45,10 +45,16 @@
 
 ### [Codepen 004-Andy](#)
 ### [Codepen 004-Larry](#)
+
+- [CSS overflow 屬性用法讓你掌握控制捲軸效果](http://www.webtech.tw/info.php?tid=28)
+- [CSS 背景屬性](http://www.1keydata.com/css-tutorial/tw/background.php)
+- [CSS 3背景新屬性：background-size](http://www.kip.com.tw/modules/news/article.php?storyid=35)
  
 > 把整個頁面分成三個 column <br />
-> 只有中間那個 column 可以用滑鼠上下滾動
+> 只有中間那個 column 可以用滑鼠上下滾動 <br />
+> 圖片網址 [https://fakeimg.pl/400x300/](https://fakeimg.pl/400x300/)
 
-![](img/004.png)
+![](img/004-1.png)
+![](img/004-2.png)
 
 ---
