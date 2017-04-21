@@ -58,3 +58,12 @@
 ![](img/004-2.png)
 
 ---
+
+### [Codepen 005-Andy](#)
+### [Codepen 005-Larry](#)
+
+> 全部共有 8 個 item <br />
+> 每個 item 都有邊框 <br />
+> 滑鼠移到 item 上面時背景變黑 <br />
+
+![](img/005.png)
