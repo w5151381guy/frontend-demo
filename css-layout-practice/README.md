@@ -43,8 +43,8 @@
 
 ---
 
-### [Codepen 004-Andy](#)
-### [Codepen 004-Larry](#)
+### [Codepen 004-Andy](https://codepen.io/Andy-Chen/pen/NjNKeo)
+### [Codepen 004-Larry](https://codepen.io/larrylu/pen/dWGBqg)
 
 - [CSS overflow 屬性用法讓你掌握控制捲軸效果](http://www.webtech.tw/info.php?tid=28)
 - [CSS 背景屬性](http://www.1keydata.com/css-tutorial/tw/background.php)
