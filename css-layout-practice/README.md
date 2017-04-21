@@ -62,6 +62,9 @@
 ### [Codepen 005-Andy](#)
 ### [Codepen 005-Larry](#)
 
+- [CSS 邊框](http://www.1keydata.com/css-tutorial/tw/border.php)
+- [教學 | CSS 網頁互動的好幫手 - hover的應用](http://weilife.pixnet.net/blog/post/321563384-%E6%95%99%E5%AD%B8-%7C-css-%E7%B6%B2%E9%A0%81%E4%BA%92%E5%8B%95%E7%9A%84%E5%A5%BD%E5%B9%AB%E6%89%8B---hover%E7%9A%84%E6%87%89%E7%94%A8)
+
 > 全部共有 8 個 item <br />
 > 每個 item 都有邊框 <br />
 > 滑鼠移到 item 上面時背景變黑 <br />
