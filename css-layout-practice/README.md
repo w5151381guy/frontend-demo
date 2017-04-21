@@ -78,6 +78,7 @@
 
 - [旋轉、傾斜、縮放的變形效果 transform](http://boohover.pixnet.net/blog/post/35341387-%E6%97%8B%E8%BD%89%E3%80%81%E5%82%BE%E6%96%9C%E3%80%81%E7%B8%AE%E6%94%BE%E7%9A%84%E8%AE%8A%E5%BD%A2%E6%95%88%E6%9E%9C-transform-%28css-prope)
 - [關於 position 屬性](http://zh-tw.learnlayout.com/position.html)
+- [CSS z-index 語法範例](http://www.wibibi.com/info.php?tid=155)
 
 > 頁面滑動時上方的 NavBar 要一直固定在上面 <br />
 > 滑鼠移到會員中心時會跳出選單 <br />
