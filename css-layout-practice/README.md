@@ -93,10 +93,14 @@
 ### [Codepen 007-Andy](#)
 ### [Codepen 006-Larry](#)
 
-> 頁面滑動時上方的 NavBar 要一直固定在上面 <br />
-> 滑鼠移到會員中心時會跳出選單 <br />
-> 頁面內容隨便放一些色塊就可以了 <br />
+- [CSS3 @media Rule](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
+- [CSS Media Queries 介紹與基礎應用](http://muki.tw/tech/css-media-queries-introduce-basic/)
+- [Media Query 小撇步](https://blog.hinablue.me/css-media-query-tips/)
+- [CSS content Property](https://www.w3schools.com/cssref/pr_gen_content.asp)
+- [Pseudo-elements](http://boohover.pixnet.net/blog/post/13148783-%3Abefore,-%3Aafter-%E6%93%AC%E5%85%83%E7%B4%A0%E6%8C%87%E6%A8%99-(css-selectors-pseudo-elemen)
 
-![](img/006-1.png)
-![](img/006-2.png)
-![](img/006-3.png)
+> 寬度大於 700 時顯示藍色的 ">700"
+> 寬度小於 700 時顯示紅色的 "<700"
+
+![](img/007-1.png)
+![](img/007-2.png)
