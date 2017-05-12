@@ -90,8 +90,8 @@
 
 ---
 
-### [Codepen 007-Andy](#)
-### [Codepen 007-Larry](#)
+### [Codepen 007-Andy](https://codepen.io/Andy-Chen/pen/ZKxZxb)
+### [Codepen 007-Larry](https://codepen.io/larrylu/pen/mmxyMG?editors=1100)
 
 - [CSS3 @media Rule](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 - [CSS Media Queries 介紹與基礎應用](http://muki.tw/tech/css-media-queries-introduce-basic/)
