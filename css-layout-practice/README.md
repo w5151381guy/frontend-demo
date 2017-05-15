@@ -110,10 +110,10 @@
 ### [Codepen 008-Andy](#)
 ### [Codepen 008-Larry](#)
 
-> 一個 container 裡面有六個 item<br />
-> 每個 item 都有框線且裡面的字都垂直置中
-> 當螢幕寬度大於 800 時，一個 row 放 3 個 item
-> 當螢幕寬度介於 500 ~ 800 時，一個 row 放 2 個 item
+> 一個 container 裡面有六個 item <br />
+> 每個 item 都有框線且裡面的字都垂直置中 <br />
+> 當螢幕寬度大於 800 時，一個 row 放 3 個 item <br />
+> 當螢幕寬度介於 500 ~ 800 時，一個 row 放 2 個 item <br />
 > 當螢幕寬度小於 500 時，一個 row 放 1 個 item
 
 ![](img/008-1.png)
