@@ -107,8 +107,8 @@
 
 ---
 
-### [Codepen 008-Andy](#)
-### [Codepen 008-Larry](#)
+### [Codepen 008-Andy](https://codepen.io/Andy-Chen/pen/ZKjGwL)
+### [Codepen 008-Larry](https://codepen.io/larrylu/pen/WjyMZN)
 
 > 一個 container 裡面有六個 item <br />
 > 每個 item 都有框線且裡面的字都垂直置中 <br />
