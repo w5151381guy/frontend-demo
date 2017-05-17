@@ -99,7 +99,7 @@
 - [CSS content Property](https://www.w3schools.com/cssref/pr_gen_content.asp)
 
 > 寬度大於 700 時顯示藍色的 ">700" <br />
-> 寬度小於 700 時顯示紅色的 "<700"
+> 寬度小於 700 時顯示紅色的 "\<700"
 
 ![](img/007-1.png)
 ![](img/007-2.png)
@@ -119,3 +119,25 @@
 ![](img/008-1.png)
 ![](img/008-2.png)
 ![](img/008-3.png)
+
+---
+
+### [Codepen 009-Andy](#)
+### [Codepen 009-Larry](#)
+
+> 一個 container 裡面有 12 個 container <br />
+> 每個 item 都包含一張圖片和item標題 <br>
+> 圖片網誌[https://fakeimg.pl/250x150/](https://fakeimg.pl/250x150/)
+> 每個 item 之間要有一些距離不能黏在一起 <br />
+> <br />
+> 螢幕分成四種 size <br />
+> 1200 以上是 large，一個 row 放 4 個 item <br />
+> 800 ~ 1200 是 big，一個 row 放 3 個 item <br />
+> 400 ~ 800 是 medium，一個 row 放 2 個 item <br />
+> 400 以下是 small，一個 row 放 1 個 item <br />
+
+![](img/009-1.png)
+![](img/009-2.png)
+![](img/009-3.png)
+![](img/009-4.png)
+
