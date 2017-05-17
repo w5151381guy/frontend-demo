@@ -125,7 +125,7 @@
 ### [Codepen 009-Andy](#)
 ### [Codepen 009-Larry](#)
 
-> 一個 container 裡面有 12 個 container <br />
+> 一個 container 裡面有 12 個 item <br />
 > 每個 item 都包含一張圖片和item標題 <br>
 > 圖片網誌[https://fakeimg.pl/250x150/](https://fakeimg.pl/250x150/) <br />
 > 圖片縮放的時候不可以只有變寬，要整張圖變大 <br />
