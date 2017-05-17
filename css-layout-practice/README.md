@@ -128,6 +128,7 @@
 > 一個 container 裡面有 12 個 container <br />
 > 每個 item 都包含一張圖片和item標題 <br>
 > 圖片網誌[https://fakeimg.pl/250x150/](https://fakeimg.pl/250x150/) <br />
+> 圖片縮放的時候不可以只有變寬，要整張圖片大 <br />
 > 每個 item 之間要有一些距離不能黏在一起 <br />
 > <br />
 > 螢幕分成四種 size <br />
