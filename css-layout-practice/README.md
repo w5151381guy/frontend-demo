@@ -142,3 +142,43 @@
 ![](img/009-3.png)
 ![](img/009-4.png)
 
+---
+
+### [Codepen 010-Andy](#)
+### [Codepen 010-Larry](#)
+
+- [可縮放向量圖形 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E5%8F%AF%E7%B8%AE%E6%94%BE%E5%90%91%E9%87%8F%E5%9C%96%E5%BD%A2)
+- [fill | CSS-Tricks](https://css-tricks.com/almanac/properties/f/fill/)
+- [SVG 研究之路 (4) - Path 基礎篇 - OXXO.STUDIO](http://www.oxxostudio.tw/articles/201406/svg-04-path-1.html)
+
+> 做一個跟 Github 一樣的 Component，總共有 5 個 row <br>
+> 第 1 個 row 顯示最後一次 commit 的內容，第 2 ~ 5 個 row 顯示 repo 內的檔案及資料夾<br>
+> 注意第 1 個 row 左上右上要有 3px 的圓角，最後一個 row 左下右下也要有 3px 的圓角<br>
+> 每個 row 之間只會有 1px 的框線(善用 .row + .row)
+> <br>
+> 資料夾跟文件的圖可以用 html 的 svg 畫出來<br>
+> 程式碼如下
+```html
+<!-- 資料夾 -->
+<svg height="16" width="14">
+      <path d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path>
+</svg>
+
+<!-- 檔案 -->
+<svg height="16" width="14">
+  <path d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path>
+</svg>
+```
+
+可能會用到的色碼 | 色碼值
+------------ | -------------
+淺色文字 | #586069
+第一個 row 的背景 | #f1f8ff
+第一個 row 的框線 | #c8e1ff
+其他 row 的背景 | white
+其他 row 的框線 | rgb(223, 226, 229)
+svg 文件夾 的顏色 | rgba(3, 47, 98, 0.5)
+svg 檔案 的顏色 | rgb(36, 41, 46)
+檔案名的藍字 | rgb(3, 102, 214)
+
+![](img/010.png)
