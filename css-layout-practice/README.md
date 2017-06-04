@@ -122,8 +122,8 @@
 
 ---
 
-### [Codepen 009-Andy](#)
-### [Codepen 009-Larry](#)
+### [Codepen 009-Andy](https://codepen.io/Andy-Chen/pen/vmaqxP)
+### [Codepen 009-Larry](https://codepen.io/larrylu/pen/EmpJLq)
 
 > 一個 container 裡面有 12 個 item <br />
 > 每個 item 都包含一張圖片和item標題 <br>
