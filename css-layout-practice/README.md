@@ -144,8 +144,8 @@
 
 ---
 
-### [Codepen 010-Andy](#)
-### [Codepen 010-Larry](#)
+### [Codepen 010-Andy](https://codepen.io/Andy-Chen/pen/NgGwyM)
+### [Codepen 010-Larry](https://codepen.io/larrylu/pen/jwOdrZ?editors=1100)
 
 - [可縮放向量圖形 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E5%8F%AF%E7%B8%AE%E6%94%BE%E5%90%91%E9%87%8F%E5%9C%96%E5%BD%A2)
 - [fill | CSS-Tricks](https://css-tricks.com/almanac/properties/f/fill/)
