@@ -15,3 +15,14 @@
 - [Enter key press event in JavaScript](https://stackoverflow.com/questions/905222/enter-key-press-event-in-javascript)
 
 ---
+
+## 002 - 可以儲存的 todo list
+
+把 001 的 todo list 加上自動儲存、清除的功能
+
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-002/index.html)
+
+#### [codepen-Larry](#)
+#### [codepen-Andy](#)
+
+### Reference
