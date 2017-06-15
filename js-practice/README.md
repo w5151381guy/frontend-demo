@@ -27,4 +27,11 @@
 
 ### Reference
 
-- 
+- [jQuery remove all list items from an unordered list](https://stackoverflow.com/questions/7004059/jquery-remove-all-list-items-from-an-unordered-list)
+- [JSON.stringify()](https://www.w3schools.com/js/js_json_stringify.asp)
+- [JSON.parse()](https://www.w3schools.com/js/js_json_parse.asp)
+- [簡述HTML5的Client端暫存-localStorage/sessionStorage](https://dotblogs.com.tw/jimmyyu/archive/2011/03/27/html5-client-storage.aspx)
+- [https://www.w3schools.com/html/html5_webstorage.asp](https://www.w3schools.com/html/html5_webstorage.asp)
+- [How do I store an array in localStorage?](https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage)
+- [How to delete a localStorage item when the browser window/tab is closed?](https://stackoverflow.com/questions/9943220/how-to-delete-a-localstorage-item-when-the-browser-window-tab-is-closed)
+- [ES6篇 - let與const](http://ithelp.ithome.com.tw/articles/10185142)
