@@ -2,7 +2,7 @@
 
 做一個簡單的 Todo List，打完字按下 Enter 也可以送出哦～
 
-### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-001/)
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-001)
 
 #### [codepen-Larry](https://codepen.io/larrylu/pen/ZyQdvM)
 #### [codepen-Andy](https://codepen.io/Andy-Chen/pen/VWaGPK)
@@ -20,7 +20,7 @@
 
 幫 001 的 todo list 加上自動儲存、清除的功能
 
-### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-002/index.html)
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-002)
 
 #### [codepen-Larry](#)
 #### [codepen-Andy](#)
