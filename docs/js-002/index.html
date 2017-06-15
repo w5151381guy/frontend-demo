@@ -37,13 +37,13 @@
   font-size: 20px;
   margin: 10px;
 }
-.input-field .submit {
+.input-field .submit, .input-field .clean {
   background-color: #00bcd4;
   padding: 5px;
   cursor: pointer;
   color: white;
 }
-.input-field .submit:hover {
+.input-field .submit:hover, .input-field .clean:hover {
   background-color: #0082b4;
 }
 
@@ -66,6 +66,7 @@
   <div class="input-field">
     <input type="text" placeholder="New Item"/>
     <div class="submit">Add Item</div>
+    <div class="clean">Clean Items</div>
   </div>
   <ol class="items"></ol>
 </div>
@@ -97,6 +98,12 @@ function addTodo() {
   saveToLocalStorage(localItems)
 }
 
+function cleanItems() {
+  localStorage.removeItem('items')
+  const $items = $('ol.items')
+  $items.empty()
+}
+
 function initialize() {
   const $items = $('ol.items')
   const $itemList = getItemsFromLocalStorage().map(item =>
@@ -108,6 +115,7 @@ function initialize() {
 $(() => {
   initialize()
   $('div.submit').click(addTodo)
+  $('div.clean').click(cleanItems)
   $('input[type=text]').on('keydown', e => {
     e.which === 13 && addTodo()
   })
