@@ -2,7 +2,7 @@
 
 做一個簡單的 Todo List，打完字按下 Enter 也可以送出哦～
 
-### [demo 網址](https://s.codepen.io/larrylu/debug/ZyQdvM/LDMmdVnpJaok)
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-001/)
 
 #### [codepen-Larry](#)
 #### [codepen-Andy](#)
