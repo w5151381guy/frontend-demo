@@ -18,7 +18,7 @@
 
 ## 002 - 可以儲存的 todo list
 
-幫 001 的 todo list 加上自動儲存、清除的功能
+幫 001 的 todo list 加上自動儲存(重新整理不會不見)、清除的功能
 
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-002)
 
