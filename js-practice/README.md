@@ -4,8 +4,8 @@
 
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-001/)
 
-#### [codepen-Larry](#)
-#### [codepen-Andy](#)
+#### [codepen-Larry](https://codepen.io/larrylu/pen/ZyQdvM)
+#### [codepen-Andy](https://codepen.io/Andy-Chen/pen/VWaGPK)
 
 ### Reference
 
@@ -18,7 +18,7 @@
 
 ## 002 - 可以儲存的 todo list
 
-把 001 的 todo list 加上自動儲存、清除的功能
+幫 001 的 todo list 加上自動儲存、清除的功能
 
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-002/index.html)
 
@@ -26,3 +26,5 @@
 #### [codepen-Andy](#)
 
 ### Reference
+
+- 
