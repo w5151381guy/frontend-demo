@@ -22,8 +22,8 @@
 
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-002)
 
-#### [codepen-Larry](#)
-#### [codepen-Andy](#)
+#### [codepen-Larry](https://codepen.io/larrylu/pen/dRpEGO)
+#### [codepen-Andy](https://codepen.io/Andy-Chen/pen/NgdpQv)
 
 ### Reference
 
