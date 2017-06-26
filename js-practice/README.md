@@ -59,7 +59,7 @@
 
 ## 004 - 非同步、Ajax基礎
 
-原本還不想扯到 ajax，但是想不到前端有什麼非同步的操作，所以這邊還是會先提到一些 ajax
+原本還不想扯到 ajax，但是想不到前端有什麼非同步的操作，所以這邊還是會先提到一些 ajax，你可以到下面 reference 看一下`$.get(url, callback)`怎麼用
 
 這邊有三個網址，可以直接連進去看，server 的反應時間是 1 ～ 5 秒不等，這次的目標是要同時發三個 ajax 去跟這台 server 要資料，先要到的資料就先 append 在 body，詳細的效果可以看下面的 demo
 - [網址a](https://ajax-practice-server.herokuapp.com/a)
