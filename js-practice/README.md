@@ -76,6 +76,8 @@
 - [同步與非同步的差異](http://www.victsao.com/blog/81-javascript/319-javascript)
 - [談談JavaScript中的asynchronous和event queue](https://pjchender.blogspot.tw/2016/01/javascriptasynchronousevent-queue.html)
 - [SYNC(同步) VS. ASYNC(非同步)](https://zetafield.wordpress.com/2015/08/05/sync%E5%90%8C%E6%AD%A5-vs-async%E9%9D%9E%E5%90%8C%E6%AD%A5/)
+↓↓↓↓↓ 下面的 Promise 可以先不用看 ↓↓↓↓↓
+- [Javascript的非同步之旅 - Part I](http://jazzlion.github.io/2016/06/18/Javascript%E7%9A%84%E9%9D%9E%E5%90%8C%E6%AD%A5%E4%B9%8B%E6%97%85-Part-I/)
 - [Window setTimeout() Method](https://www.w3schools.com/jsref/met_win_settimeout.asp)
 - [Javascript非同步編程的方法](http://marklin-blog.logdown.com/posts/297482-javascript-asynchronous-programming-methods-settimeout)
 - [jQuery.get()](https://api.jquery.com/jquery.get/)
