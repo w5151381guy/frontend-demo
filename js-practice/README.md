@@ -76,4 +76,5 @@
 - [同步與非同步的差異](http://www.victsao.com/blog/81-javascript/319-javascript)
 - [Window setTimeout() Method](https://www.w3schools.com/jsref/met_win_settimeout.asp)
 - [Javascript非同步編程的方法](http://marklin-blog.logdown.com/posts/297482-javascript-asynchronous-programming-methods-settimeout)
+- [jQuery.get()](https://api.jquery.com/jquery.get/)
 
