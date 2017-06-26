@@ -54,3 +54,25 @@
 - [深入浅出ES6（一）：ES6是什么](http://www.infoq.com/cn/articles/es6-in-depth-an-introduction)
 - [箭頭函式](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/arrow_function.html)
 - [幾個實用的 JS 小技巧](http://larry850806.github.io/2016/07/16/JS-tips/)
+
+---
+
+## 004 - 非同步、Ajax基礎
+
+這邊有三個網址，可以直接連進去看，server 的反應時間是 1 ～ 5 秒不等，這次的目標是要同時發三個 ajax 去跟這台 server 要資料，先要到的資料就先 append 在 body，詳細的效果可以看下面的 demo
+- [網址a](https://ajax-practice-server.herokuapp.com/a)
+- [網址b](https://ajax-practice-server.herokuapp.com/b)
+- [網址c](https://ajax-practice-server.herokuapp.com/c)
+
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-004)
+
+#### [codepen-Larry](https://codepen.io/larrylu/pen/WORowM)
+#### [codepen-Andy](https://codepen.io/Andy-Chen/pen/PjmQJz)
+
+### Reference
+
+- [How do I remove a particular element from an array in JavaScript?](https://stackoverflow.com/questions/5767325/how-do-i-remove-a-particular-element-from-an-array-in-javascript)
+- [相等比較 - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+- [深入浅出ES6（一）：ES6是什么](http://www.infoq.com/cn/articles/es6-in-depth-an-introduction)
+- [箭頭函式](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/arrow_function.html)
+- [幾個實用的 JS 小技巧](http://larry850806.github.io/2016/07/16/JS-tips/)
