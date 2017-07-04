@@ -68,8 +68,8 @@
 
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-004)
 
-#### [codepen-Larry](#)
-#### [codepen-Andy](#)
+#### [codepen-Larry](https://codepen.io/larrylu/pen/ZyXrMK)
+#### [codepen-Andy](https://codepen.io/Andy-Chen/pen/zzjpgJ)
 
 ### Reference
 
