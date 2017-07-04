@@ -82,3 +82,22 @@
 - [Javascript非同步編程的方法](http://marklin-blog.logdown.com/posts/297482-javascript-asynchronous-programming-methods-settimeout)
 - [jQuery.get()](https://api.jquery.com/jquery.get/)
 
+---
+
+## 004 - 非同步、Ajax基礎 2
+
+這次要做的東西跟 js-004 很像，可以直接 fork js-004 改，原本的 js-004 是先到的資料就先顯示出來，現在改成同時發三個 request，但是等所有資料都到了之後再一次顯示出來
+
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-005)
+
+#### [codepen-Larry](#)
+#### [codepen-Andy](#)
+
+### Reference
+
+- [jQuery hide](http://api.jquery.com/hide/)
+- [JavaScript ES6 Promise Object 物件](http://www.fooish.com/javascript/es6/Promise.html)
+- [ES6 Promise 筆記](https://vinta.ws/code/es6-promise-notes.html)
+- [Javascript的非同步之旅 - Part I](http://jazzlion.github.io/2016/06/18/Javascript%E7%9A%84%E9%9D%9E%E5%90%8C%E6%AD%A5%E4%B9%8B%E6%97%85-Part-I/)
+- [JavaScript 同步延遲 ( Promise + setTimeout )](http://www.oxxostudio.tw/articles/201706/javascript-promise-settimeout.html)
+
