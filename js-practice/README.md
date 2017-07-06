@@ -57,7 +57,7 @@
 
 ---
 
-## 004 - 非同步、Ajax基礎
+## 004 - 非同步、Ajax
 
 原本還不想扯到 ajax，但是想不到前端有什麼非同步的操作XD，所以這邊還是會先提到一些 ajax，你可以到下面 reference 看一下`$.get(url, callback)`怎麼用
 
@@ -84,7 +84,7 @@
 
 ---
 
-## 004 - 非同步、Ajax基礎 2
+## 005 - 非同步、Ajax 2
 
 這次要做的東西跟 js-004 很像，可以直接 fork js-004 改，原本的 js-004 是先到的資料就先顯示出來，現在改成同時發三個 request，但是等所有資料都到了之後再一次顯示出來
 
@@ -101,3 +101,18 @@
 - [Javascript的非同步之旅 - Part I](http://jazzlion.github.io/2016/06/18/Javascript%E7%9A%84%E9%9D%9E%E5%90%8C%E6%AD%A5%E4%B9%8B%E6%97%85-Part-I/)
 - [JavaScript 同步延遲 ( Promise + setTimeout )](http://www.oxxostudio.tw/articles/201706/javascript-promise-settimeout.html)
 
+---
+
+## 006 - 非同步、Ajax 3
+
+這次要做的東西跟 js-005 很像，可以直接 fork js-005 改，原本的 js-005 是同時發三個 request，現在改成等 request A 回來才發 request B，B 回來再發 C，回來的資料就馬上 append 到 body 上
+
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-006)
+
+#### [codepen-Larry](#)
+#### [codepen-Andy](#)
+
+### Reference
+
+如果你厭倦了把 jquery 的 ajax 另外包一層變成 Promise，這邊推薦你一個 Promise based 的 library 叫 axios，每個 request 都是一個 Promise 不用另外包
+- [mzabriskie/axios](https://github.com/mzabriskie/axios)
