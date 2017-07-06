@@ -84,7 +84,7 @@
   let state = { items: [] }
   const baseURL = 'https://ajax-practice-server.herokuapp.com/todo'
 
-  const storage = {
+  const API = {
     // fetchItems get empty array by default
     fetchItems() {
       return new Promise((resolve, reject) => {
@@ -103,10 +103,20 @@
           .fail(alert)
       })
     },
-    // // saveItems: () => localStorage.setItem('items', JSON.stringify(state.items)),
-    // cleanItems() {
-    //   localStorage.removeItem('items')
-    // },
+    deleteItem(idx) {
+      return new Promise((resolve, reject) => {
+        $.ajax({ url: `${baseURL}/api/delete/${idx}`, method: 'DELETE' })
+          .done(resolve)
+          .fail(alert)
+      })
+    },
+    cleanItems() {
+      return new Promise((resolve, reject) => {
+        $.ajax({ url: `${baseURL}/api/clean`, method: 'DELETE' })
+          .done(resolve)
+          .fail(alert)
+      })
+    },
   }
 
   // Render state to UI
@@ -131,25 +141,21 @@
   function addTodo() {
     const $input = $('input')
     const newItem = $input.val()
+    API.addItem(newItem).then(API.fetchItems).then(render)
     $input.val('')
-    storage.addItem(newItem).then(storage.fetchItems).then(render)
   }
 
   function deleteTodo(idx) {
     // Remove the element that (index === idx)
-    state.items.splice(idx, 1)
-    render()
-    storage.saveItems()
+    API.deleteItem(idx).then(API.fetchItems).then(render)
   }
 
   function cleanTodo() {
-    state.items = []
-    render()
-    storage.cleanItems()
+    API.cleanItems().then(API.fetchItems).then(render)
   }
 
   function initialize() {
-    storage.fetchItems().then(render)
+    API.fetchItems().then(render)
   }
 
   initialize()
