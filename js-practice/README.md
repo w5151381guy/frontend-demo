@@ -121,7 +121,8 @@
 
 ## 007 - 可以儲存到線上的 todo list
 
-原則上跟 003 一樣，可以直接 fork 003，只是現在資料不存在 localstorage 了，而是存在網路上，下面有 api 格式，記得每個 api 開頭都要加上 baseURL
+原則上跟 003 一樣，可以直接 fork 003，只是現在資料不存在 localstorage 了，而是存在網路上，下面有 api 格式，記得每個 api 開頭都要加上 baseURL。
+另外，因為我們沒有分成很多帳號，所以我們會共用同一份資料庫，你如果不小心刪光了可以去我寫好的 demo 那邊新增。
 
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-007)
 
