@@ -133,3 +133,52 @@
 - [How to send a PUT/DELETE request in jQuery?](https://stackoverflow.com/questions/2153917/how-to-send-a-put-delete-request-in-jquery)
 - [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)
 - [簡明RESTful API設計要點](https://tw.twincl.com/programming/*641y)
+
+### API
+
+__baseUrl: https://ajax-practice-server.herokuapp.com/todo__
+
+#### 得到所有 todo items
+
+```js
+GET /api/list
+```
+
+GET /api/list 會得到以下結果
+
+```js
+[
+    "item1",
+    "item2",
+    "item3",
+    "item4"
+]
+```
+
+---
+
+#### 新增一個 todo item
+
+```js
+POST /api/add/:content
+```
+
+POST /api/add/item5 就會新增一個 item5
+
+---
+
+#### 刪除某一個 todo item
+
+```js
+DELETE /api/delete/:index
+```
+
+DELETE /api/delete/2 會刪掉 index 為 2 的 item
+
+---
+
+#### 清除整個 todo list
+
+```js
+DELETE /api/clean
+```
