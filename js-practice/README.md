@@ -116,3 +116,20 @@
 
 如果你厭倦了把 jquery 的 ajax 另外包一層變成 Promise，這邊推薦你一個 Promise based 的 library 叫 axios，每個 request 都是一個 Promise 不用另外包
 - [mzabriskie/axios](https://github.com/mzabriskie/axios)
+
+---
+
+## 007 - 可以儲存到線上的 todo list
+
+原則上跟 003 一樣，可以直接 fork 003，只是現在資料不存在 localstorage 了，而是存在網路上，下面會給你 api 格式
+
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-007)
+
+#### [codepen-Larry](#)
+#### [codepen-Andy](#)
+
+### Reference
+
+- [How to send a PUT/DELETE request in jQuery?](https://stackoverflow.com/questions/2153917/how-to-send-a-put-delete-request-in-jquery)
+- [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)
+- [簡明RESTful API設計要點](https://tw.twincl.com/programming/*641y)
