@@ -90,8 +90,8 @@
 
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-005)
 
-#### [codepen-Larry](#)
-#### [codepen-Andy](#)
+#### [codepen-Larry](https://codepen.io/larrylu/pen/MoGzad?editors=0010#0)
+#### [codepen-Andy](https://codepen.io/Andy-Chen/pen/MoGzvg)
 
 ### Reference
 
