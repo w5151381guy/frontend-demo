@@ -174,7 +174,7 @@ POST /api/add/item5 就會新增一個 item5
 DELETE /api/delete/:index
 ```
 
-DELETE /api/delete/2 會刪掉 index 為 2 的 item
+DELETE /api/delete/2 會刪掉 index 為 2 的 item <br>
 (index 從 0 開始算)
 
 ---
