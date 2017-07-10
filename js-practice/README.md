@@ -127,7 +127,7 @@
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-007)
 
 #### [codepen-Larry](#)
-#### [codepen-Andy](#)
+#### [codepen-Andy](https://codepen.io/Andy-Chen/pen/bRxdXq)
 
 ### Reference
 
