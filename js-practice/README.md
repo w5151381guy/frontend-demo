@@ -184,3 +184,36 @@ DELETE /api/delete/2 會刪掉 index 為 2 的 item <br>
 ```js
 DELETE /api/clean
 ```
+
+---
+
+
+## 008 - this、函數作用域
+
+這次不用寫什麼新的東西，只要了解 this 之後想辦法把 007 的
+
+```js
+success: () => {
+  $('.show ol').empty()
+}
+```
+
+改成
+
+```js
+success: $('.show ol').empty.bind(...)
+```
+
+就可以了
+
+### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-007)
+
+#### [codepen-Larry](#)
+#### [codepen-Andy](#)
+
+### Reference
+
+如果你厭倦了把 jquery 的 ajax 另外包一層變成 Promise，這邊推薦你一個 Promise based 的 library 叫 axios，每個 request 都是一個 Promise 不用另外包
+- [mzabriskie/axios](https://github.com/mzabriskie/axios)
+
+---
