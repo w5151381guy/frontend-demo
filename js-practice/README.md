@@ -204,6 +204,12 @@ success: () => {
 success: $('.show ol').empty.bind(...)
 ```
 
+並且了解為什麼不能寫
+
+```js
+success: $('.show ol').empty
+```
+
 就可以了
 
 ### [demo 網址](https://w5151381guy.github.io/frontend-demo/js-007)
@@ -213,7 +219,10 @@ success: $('.show ol').empty.bind(...)
 
 ### Reference
 
-如果你厭倦了把 jquery 的 ajax 另外包一層變成 Promise，這邊推薦你一個 Promise based 的 library 叫 axios，每個 request 都是一個 Promise 不用另外包
-- [mzabriskie/axios](https://github.com/mzabriskie/axios)
+- [深入淺出瞭解 JavaScript 閉包](https://pjchender.blogspot.tw/2017/05/javascript-closure.html)
+- [作用域与闭包：this，var，(function () {})](https://github.com/alsotang/node-lessons/tree/master/lesson11)
+- [談談JavaScript中的"this"和它的bug](https://pjchender.blogspot.tw/2016/03/javascriptthisbug.html)
+- [JavaScript：this用法整理](http://knightzone.org/?p=106)
+- [前言與理解 Function.prototype.bind](http://ithelp.ithome.com.tw/articles/10155643)
 
 ---
