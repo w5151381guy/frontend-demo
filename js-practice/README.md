@@ -175,6 +175,7 @@ DELETE /api/delete/:index
 ```
 
 DELETE /api/delete/2 會刪掉 index 為 2 的 item
+(index 從 0 開始算)
 
 ---
 
