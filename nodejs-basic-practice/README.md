@@ -5,6 +5,7 @@
 ### Reference
 
 - [Node.js](https://nodejs.org/en/)
+- [NPM 包管理中package.json文件的使用](https://itbilu.com/nodejs/npm/Nkq9GPy1Z.html)
 - [Node.js Tutorial](http://blog.geego.com/2015/08/28/welcome-to-node-js-tutorial/)
 > 下面這篇內容很多，看到 __伺服器端的模組放在哪裡__ 就可以了 <br>
 - [Node入門](https://www.nodebeginner.org/index-zh-tw.html#javascript-and-nodejs)
