@@ -8,4 +8,16 @@
 ### Reference
 
 - [CodeSandbox](https://codesandbox.io/)
-- [React](https://facebook.github.io/react/docs/hello-world.html)
+- [React Doc](https://facebook.github.io/react/docs/hello-world.html)
+
+---
+
+## 001 -  State
+
+看完從 __State and Lifecycle__ 到 __Lists and Keys__，然後把下面的 __Hello Repeat__ 範例看懂。
+
+### [001.Hello Repeat](https://codesandbox.io/s/ElXwr84yW)
+
+### Reference
+
+- [React Doc](https://facebook.github.io/react/docs/state-and-lifecycle.html)
