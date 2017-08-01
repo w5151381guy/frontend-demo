@@ -21,3 +21,4 @@
 ### Reference
 
 - [React Doc](https://facebook.github.io/react/docs/state-and-lifecycle.html)
+- [Inline Styles](https://zhenyong.github.io/react/tips/inline-styles.html)
