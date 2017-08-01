@@ -22,3 +22,11 @@
 
 - [React Doc](https://facebook.github.io/react/docs/state-and-lifecycle.html)
 - [Inline Styles](https://zhenyong.github.io/react/tips/inline-styles.html)
+
+---
+
+## 002 -  basic practice
+
+練習做一個可以放大、縮小字型的網站
+
+### [demo](https://codesandbox.io/embed/k5KoXLJzx?view=preview)
