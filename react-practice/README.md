@@ -1,7 +1,7 @@
 ## 001 - React.js 基礎
 
 因為 CodeSandbox 已經架好 react 的環境， 所以之後會用 CodeSandbox 來練習 react，他可以用 github 登入，可以先去熟悉一下。
-這次練習的目標是要看到 __Components and Props__ 然後把下面的 __Hello World__ 範例看懂。
+這次練習的目標是要看完 __Components and Props__ 然後把下面的 __Hello World__ 範例看懂。
 
 ### [Hello World](https://codesandbox.io/s/g5qo6nVKk)
 
