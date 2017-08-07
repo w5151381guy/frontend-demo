@@ -30,3 +30,11 @@
 練習做一個可以放大、縮小字型的網站
 
 ### [demo](https://codesandbox.io/embed/k5KoXLJzx?view=preview)
+
+---
+
+## 003 -  calculator
+
+練習做一個簡單的計算機
+
+### [demo](https://codesandbox.io/embed/NJvMzm8m?view=preview)
