@@ -29,7 +29,7 @@
 
 練習做一個可以放大、縮小字型的網站
 
-### [demo](https://codesandbox.io/embed/k5KoXLJzx?view=preview)
+### [demo](https://k5koxljzx.codesandbox.io/)
 
 ---
 
@@ -37,7 +37,7 @@
 
 練習做一個簡單的計算機
 
-### [demo](https://codesandbox.io/embed/NJvMzm8m?view=preview)
+### [demo](https://njvmzm8m.codesandbox.io/)
 
 ---
 
@@ -45,7 +45,7 @@
 
 這次的練習不會很難，主要讓你練習使用別人開源的 component 跟 library
 
-### [demo](https://codesandbox.io/embed/0o6w295ynn?view=preview)
+### [demo](https://0o6w295ynn.codesandbox.io/)
 
 ### Reference
 
