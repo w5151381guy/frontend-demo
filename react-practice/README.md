@@ -38,3 +38,26 @@
 練習做一個簡單的計算機
 
 ### [demo](https://codesandbox.io/embed/NJvMzm8m?view=preview)
+
+---
+
+## 004 - Markdown 即時預覽
+
+這次的練習不會很難，主要讓你練習使用別人開源的 component 跟 library
+
+### [demo](https://codesandbox.io/s/0o6w295ynn?view=preview)
+
+### Reference
+
+把 React Doc 的 __QUICK START__ 全部看完
+- [React Doc](https://facebook.github.io/react/docs/state-and-lifecycle.html)
+
+### Component
+
+這些是我用到的開源 component，如果你覺得這些 component 不好用你也可以再找找其他的，或是自己刻一個然後開源回饋給 React 社群 XD
+
+- [marked](https://github.com/chjj/marked)
+- [react-textarea-autosize](https://github.com/andreypopp/react-textarea-autosize)
+- [react-render-html](https://github.com/noraesae/react-render-html)
+
+
