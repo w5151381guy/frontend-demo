@@ -45,7 +45,7 @@
 
 這次的練習不會很難，主要讓你練習使用別人開源的 component 跟 library
 
-### [demo](https://codesandbox.io/s/0o6w295ynn?view=preview)
+### [demo](https://codesandbox.io/embed/0o6w295ynn?view=preview)
 
 ### Reference
 
