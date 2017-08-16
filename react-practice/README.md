@@ -54,7 +54,7 @@
 
 ### Component
 
-這些是我用到的開源 component，如果你覺得這些 component 不好用你也可以再找找其他的，或是自己刻一個然後開源回饋給 React 社群 XD
+這些是我用到的 component 跟 library，如果你覺得這些 component 不好用你也可以再找找其他的，或是自己刻一個然後開源回饋給 React 社群 XD
 
 - [marked](https://github.com/chjj/marked)
 - [react-textarea-autosize](https://github.com/andreypopp/react-textarea-autosize)
