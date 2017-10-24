@@ -142,3 +142,8 @@ docs
 ### 5. push 到 github 上
 
 這步應該不用多說，就 commit 一下然後 push 到 github 上，這樣就部屬完成了，完成了之後到 https://w5151381guy.github.io/frontend-demo/react-005-andy/ 看看有沒有成功
+
+----
+
+我們之後應該就這樣練習，你可以在本地端開發到一段落之後再 build 然後 push 上來，這樣也比較接近真實開發的過程，等你夠熟練了之後我再教你怎麼架環境，包刮設定 `babel`, `webpack`, `loader`, `css-module` 等等
+
