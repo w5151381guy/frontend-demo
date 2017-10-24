@@ -101,7 +101,7 @@ react-005-andy
 
 ### 4. 部屬到 github page 上
 
-在部屬之前要先 build，但因為我們要部屬到 github page 上，首頁不像在 local 端開發時是 localhost:3000/ 而是 https://w5151381guy.github.io/frontend-demo/react-005-andy/，所以要在 `package.json` 裡面加上一個欄位 `homepage: "https://w5151381guy.github.io/frontend-demo/react-005-andy/"`，這樣他才知道首頁在哪裡，如下圖，不然會有路由的問題。
+在部屬之前要先 build，但因為我們要部屬到 github page 上，首頁不像在 local 端開發時是 localhost:3000/ 而是 https://w5151381guy.github.io/frontend-demo/react-005-andy/ ，所以要在 `package.json` 裡面加上一個欄位 `homepage: "https://w5151381guy.github.io/frontend-demo/react-005-andy/"`，這樣他才知道首頁在哪裡，如下圖，不然會有路由的問題。
 
 ![](https://i.imgur.com/RPt3k2V.png)
 
