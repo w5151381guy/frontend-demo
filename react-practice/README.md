@@ -70,7 +70,7 @@
 
 `create-react-app` 是 Facebook 推出的 CLI 小工具，他幫你把一些複雜的設定(`webpack`,`babel`,`minify`...)都包裝好了，所以你不需要自己做任何設定，只要專注在寫 react code 就可以了。
 
-### 安裝
+### 1. 安裝
 
 用 `npm install create-react-app` 或是 `yarn global add create-react-app` 把 `create-react-app` 安裝成全域的指令
 
