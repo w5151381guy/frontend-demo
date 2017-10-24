@@ -76,5 +76,6 @@
 
 確認有裝 `node` 之後用 `npm install create-react-app -g` 或是 `yarn global add create-react-app` 把 `create-react-app` 安裝成全域的指令，安裝完之後跑 `create-react-app --version` 看有沒有版本號。<br />
 
-如果你是用 `windows` 的話建議不要用 `yarn`，他對 `windows` 支援還沒有很好
+### 2. 用 `create-react-app` 建立一個專案
 
+先把 `w5151381guy/frontend-demo` 這個 repo clone 到本機上，進到 `react-practice` 這個資料夾之後，看一下是不是有一個 `react-005-larry`，確認有之後你可以下 `create-react-app react-005-andy` 建立一個你的專案
