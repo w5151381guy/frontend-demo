@@ -64,7 +64,11 @@
 
 ## 005 - 用 `create-react-app` 架設 local 開發環境
 
+基本的 react 你已經差不多會了，之後多練習就可以。為了讓你更接近真實開發的狀況，所以這次打算讓你練習自己架環境，我們以後就不再用 codesandbox，而是用 `create-react-app` 架設開發環境，並部屬到 github page 上。
+
 ### [create-react-app](https://github.com/facebookincubator/create-react-app)
 
-`create-react-app` 是 Facebook 推出的 CLI 小工具，可以用 `npm install create-react-app` 或是 `yarn global add create-react-app` 安裝
+`create-react-app` 是 Facebook 推出的 CLI 小工具，他幫你把一些複雜的設定(`webpack`,`babel`,`minify`...)都包裝好了，所以你不會需要自己做任何設定，只要專注在寫 react code 就可以了。
+
+`npm install create-react-app` 或是 `yarn global add create-react-app` 安裝
 
