@@ -123,3 +123,22 @@ build
     ├── js
     └── media
 ```
+
+把這整個資料夾複製一份到 `frontend-demo/docs` 裡面然後改名叫 `react-005-andy`，這時候 `docs` 目錄應該會長這樣，`react-005-andy` 就是你剛剛的 `build` 資料夾，裡面應該有一個 `index.html`。
+
+```
+docs
+├── js-001
+├── js-002
+├── js-003
+├── js-004
+├── js-005
+├── js-006
+├── js-007
+├── react-005-andy
+└── react-005-larry
+```
+
+### 5. push 到 github 上
+
+這不應該不用多說，就 commit 一下然後 push 到 github 上，這樣就部屬完成了
