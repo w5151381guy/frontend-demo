@@ -100,3 +100,8 @@ react-005-andy
 成功看到網頁之後，進到 `src/App.js` 裡面把 `p.App-intro` 的內容改成 `Hello World ~ I am Andy Chen`，看網頁有沒有馬上變化，有的話就沒問題了，以後就是這樣子開發。
 
 ### 4. 部屬到 github page 上
+
+在部屬之前要先 build，但因為我們要部屬到 github page 上，首頁不像在 local 端開發時是 localhost:3000/ 而是 https://w5151381guy.github.io/frontend-demo/react-005-andy/，所以要在 `package.json` 裡面加上一個欄位 `homepage: "https://w5151381guy.github.io/frontend-demo/react-005-andy/"`，這樣他才知道首頁在哪裡，不然會有路由的問題。
+
+![](https://i.imgur.com/RPt3k2V.png)
+在專案目錄下跑 `yarn build` 或是 `npm run build` 都可以
