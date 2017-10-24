@@ -141,4 +141,4 @@ docs
 
 ### 5. push 到 github 上
 
-這不應該不用多說，就 commit 一下然後 push 到 github 上，這樣就部屬完成了
+這步應該不用多說，就 commit 一下然後 push 到 github 上，這樣就部屬完成了，完成了之後到 https://w5151381guy.github.io/frontend-demo/react-005-andy/ 看看有沒有成功
