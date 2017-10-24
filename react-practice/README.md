@@ -1,4 +1,4 @@
-## 000 -  熟悉環境、React.js 基礎
+## 000 - 熟悉環境、React.js 基礎
 
 因為 CodeSandbox 已經架好 react 的環境， 所以之後會用 CodeSandbox 來練習 react，他可以用 github 登入，可以先去熟悉一下。
 這次練習的目標是要看完從 __Hello World__ 到 __Components and Props__，然後把下面的 __Hello__ 範例看懂。
@@ -12,7 +12,7 @@
 
 ---
 
-## 001 -  State ~ List
+## 001 - State ~ List
 
 看完從 __State and Lifecycle__ 到 __Lists and Keys__，然後把下面的 __Hello Repeat__ 範例看懂。
 
@@ -25,7 +25,7 @@
 
 ---
 
-## 002 -  basic practice
+## 002 - basic practice
 
 練習做一個可以放大、縮小字型的網站
 
@@ -33,7 +33,7 @@
 
 ---
 
-## 003 -  calculator
+## 003 - calculator
 
 練習做一個簡單的計算機
 
@@ -60,4 +60,11 @@
 - [react-textarea-autosize](https://github.com/andreypopp/react-textarea-autosize)
 - [react-render-html](https://github.com/noraesae/react-render-html)
 
+---
+
+## 005 - 用 `create-react-app` 架設 local 開發環境
+
+### [create-react-app](https://github.com/facebookincubator/create-react-app)
+
+`create-react-app` 是 Facebook 推出的 CLI 小工具，可以用 `npm install create-react-app` 或是 `yarn global add create-react-app` 安裝
 
