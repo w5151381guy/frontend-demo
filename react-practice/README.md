@@ -74,7 +74,7 @@
 
 在安裝之前先確定你有沒有裝 `node >= 6` 以上的版本，沒有的話到 https://nodejs.org/en/ 安裝。<br />
 
-確認有裝 `node` 之後用 `npm install create-react-app` 或是 `yarn global add create-react-app` 把 `create-react-app` 安裝成全域的指令，安裝完之後跑 `create-react-app --version` 看有沒有版本號。<br />
+確認有裝 `node` 之後用 `npm install create-react-app -g` 或是 `yarn global add create-react-app` 把 `create-react-app` 安裝成全域的指令，安裝完之後跑 `create-react-app --version` 看有沒有版本號。<br />
 
 如果你是用 `windows` 的話建議不要用 `yarn`，他對 `windows` 支援還沒有很好
 
