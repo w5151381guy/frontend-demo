@@ -78,7 +78,7 @@
 
 ### 2. 用 `create-react-app` 建立一個專案
 
-先把 `w5151381guy/frontend-demo` 這個 repo clone 到本機上，進到 `react-practice` 這個資料夾之後，看一下是不是有一個 `react-005-larry`，確認有之後你可以下 `create-react-app react-005-andy` 建立一個你的專案，建立之後內部的目錄結構應該會長這樣
+先把 `w5151381guy/frontend-demo` 這個 repo clone 到本機上，進到 `react-practice` 這個資料夾之後，看一下是不是有一個 `react-005-larry`，確認有之後你可以跑 `create-react-app react-005-andy` 建立一個你的專案，建立之後內部的目錄結構應該會長這樣
 
 ```
 react-005-andy
