@@ -105,3 +105,21 @@ react-005-andy
 
 ![](https://i.imgur.com/RPt3k2V.png)
 
+設定完之後我們就可以在專案目錄下跑 `yarn build` 或是 `npm run build` 開始 build，在 build 的過程中他會幫你把 `js`, `css` 等等壓縮，然後包成幾個檔案，你跑完他有可能會跑出像是下圖的訊息，因為我們是自己設定 github page 的資料夾，所以那個可以不要理他。
+
+![](https://i.imgur.com/yeSUKsv.png)
+
+build 完之後會在專案目錄下多一個 `build/` 資料夾，目錄結構大概長這樣
+
+```
+build
+├── asset-manifest.json
+├── favicon.ico
+├── index.html
+├── manifest.json
+├── service-worker.js
+└── static
+    ├── css
+    ├── js
+    └── media
+```
