@@ -64,7 +64,7 @@
 
 ## 005 - 用 `create-react-app` 架設 local 開發環境
 
-基本的 react 你已經差不多會了，之後多練習就可以。為了讓你更接近真實開發的狀況，所以這次打算讓你練習自己架環境，我們以後就不再用 codesandbox，而是用 `create-react-app` 架設開發環境，並部屬到 github page 上。
+基本的 react 你已經差不多會了，之後多練習就可以。為了讓你更接近真實開發的狀況，所以這次打算讓你練習自己架環境，我們以後就不再用 codesandbox，而是用 `create-react-app` 架設開發環境，並部屬到 github page 上，順帶一提，其實 codesandbox 的環境就是用 `create-react-app` 建的，所以在上面有的功能一樣可以繼續用。
 
 ### [demo](https://w5151381guy.github.io/frontend-demo/react-005-larry/)
 
