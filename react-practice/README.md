@@ -95,6 +95,8 @@ react-005-andy
 
 ### 3. 開發
 
-進到你的專案之後可以看一下 `package.json`，`create-react-app` 已經幫你把 `scripts` 都寫好了，你只要在目錄下跑 `npm start` 或是 `yarn start` 就可以開始開發，他這個 script 就很像我們在 c9 上面的 `yarn run dev`，會自動幫你監聽檔案變化還有重新編譯。跑起來之後他會幫你監聽 `port 3000`，你到 `localhost:3000` 應該可以看到結果。<br />
+進到你的專案之後可以看一下 `package.json`，`create-react-app` 已經幫你把 `scripts` 都寫好了，你只要在目錄下跑 `npm start` 或是 `yarn start` 就可以開始開發，他這個 script 就很像我們在 c9 上面的 `yarn run dev`，會自動幫你監聽檔案變化還有重新編譯。跑起來之後他會幫你監聽 `port 3000`，你到 `localhost:3000` 就可以看到結果。<br />
 
-成功看到網頁之後，進到 `src/App.js` 裡面把 `p.App-intro` 的內容改成 `Hello World ~ I am Andy Chen`，看網頁有沒有馬上變化
+成功看到網頁之後，進到 `src/App.js` 裡面把 `p.App-intro` 的內容改成 `Hello World ~ I am Andy Chen`，看網頁有沒有馬上變化，有的話就沒問題了，以後就是這樣子開發。
+
+### 4. 部屬到 github page 上
