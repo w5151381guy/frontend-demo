@@ -66,6 +66,8 @@
 
 基本的 react 你已經差不多會了，之後多練習就可以。為了讓你更接近真實開發的狀況，所以這次打算讓你練習自己架環境，我們以後就不再用 codesandbox，而是用 `create-react-app` 架設開發環境，並部屬到 github page 上。
 
+### [demo](https://w5151381guy.github.io/frontend-demo/react-005-larry/)
+
 ### [create-react-app](https://github.com/facebookincubator/create-react-app) 簡介
 
 `create-react-app` 是 Facebook 推出的 CLI 小工具，他幫你把一些複雜的設定(`webpack`,`babel`,`minify`...)都包裝好了，所以你不需要自己做任何設定，只要專注在寫 react code 就可以了。
@@ -90,3 +92,8 @@ react-005-andy
 ├── src
 └── yarn.lock
 ```
+
+### 3. 開發
+
+進到你的專案之後可以看一下 `package.json`，`create-react-app` 已經幫你把 `scripts` 都寫好了，你只要在目錄下跑 `npm start` 或是 `yarn start` 就可以開始開發，他這個 script 就很像我們在 c9 上面的 `yarn run dev`，會自動幫你監聽檔案變化還有重新編譯。跑起來之後他會幫你監聽 `port 3000`，你到 `localhost:3000` 應該可以看到結果。<br />
+
