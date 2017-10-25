@@ -10,7 +10,9 @@ const MessageAreaWrapper = styled.div`
 
 const MessageArea = ({ messages }) => (
   <MessageAreaWrapper>
-    {messages.map(message => <RightMessageItem>{message}</RightMessageItem>)}
+    {messages.map((message, idx) => (
+      <RightMessageItem key={idx}>{message}</RightMessageItem>
+    ))}
   </MessageAreaWrapper>
 )
 
