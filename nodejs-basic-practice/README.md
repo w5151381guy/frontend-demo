@@ -16,13 +16,16 @@
 
 Express 是 Nodejs 目前最流行的 web 框架，可以很簡單的架起 API server，試著用 express 架一個 server 監聽 port 3000，直接在 `nodejs-basic-practice` 裡面建一個 `002` 的專案，完成以下幾個 API。
 
-#### Request
-```
-Request:
-GET /api/testing
-
+#### GET /api/testing
+```js
 Response:
-"Hello World"
+"Hello World GET"
+```
+
+#### POST /api/testing
+```js
+Response:
+"Hello World POST"
 ```
 
 ### Reference
