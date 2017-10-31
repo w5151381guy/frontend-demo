@@ -32,6 +32,10 @@ Response
 "Hello World POST"
 ```
 
+### 寫完可以用 Postman 或是 curl 之類的工具測測看
+
+![](https://i.imgur.com/REvpQ7W.png)
+
 ### Reference
 
 - [Installing Express](http://expressjs.com/en/starter/installing.html)
