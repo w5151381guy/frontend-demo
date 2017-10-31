@@ -14,14 +14,19 @@
 
 ## 002 - 用 Express 框架寫一個沒有任何功能的 server
 
-Express 是 Nodejs 目前最流行的 web 框架，可以很簡單的架起 API server，試著用 express 架一個 server 監聽 port 3000，直接在 `nodejs-basic-practice` 裡面建一個 `002` 的專案，完成以下 API。
+Express 是 Nodejs 目前最流行的 web 框架，可以很簡單的架起 API server，試著用 express 架一個 server 監聽 port 3000，直接在 `nodejs-basic-practice` 裡面建一個 `002` 的專案，完成以下幾個 API。
 
 #### Request
 ```
+Request:
 GET /api/testing
-```
 
-#### Response
-```
+Response:
 "Hello World"
 ```
+
+### Reference
+
+- [Installing Express](http://expressjs.com/en/starter/installing.html)
+- [Hello world example](http://expressjs.com/en/starter/hello-world.html)
+- [Basic routing](http://expressjs.com/en/starter/basic-routing.html)
