@@ -48,7 +48,7 @@ Response
 
 ## 003 - 處理 query string, params 跟 body
 
-Express 是 Nodejs 目前最流行的 web 框架，可以很簡單的架起 API server，試著用 express 架一個 server 監聽 port 3000，直接在 `nodejs-basic-practice` 裡面建一個 `002` 的專案，完成以下幾個 API。
+從前端要傳資料或是跟後端要資料有幾種方法，比較簡單的是透過 qs(query string), params, body，`GET` 的話沒有 body 所以只能用 qs 或是 params，參考下面的 reference，實作出以下幾個 api
 
 #### GET /api/item/1
 
@@ -71,7 +71,7 @@ Response:
 Response:
 
 ```js
-"100 in query string"
+"100 in qs"
 ```
 
 #### POST /api/item
