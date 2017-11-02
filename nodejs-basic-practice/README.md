@@ -80,6 +80,7 @@ Request
 
 ```js
 // body
+// Content-Type: application/json
 {
   id: 500
 }
