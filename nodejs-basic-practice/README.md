@@ -43,3 +43,57 @@ Response
 - [Installing Express](http://expressjs.com/en/starter/installing.html)
 - [Hello world example](http://expressjs.com/en/starter/hello-world.html)
 - [Basic routing](http://expressjs.com/en/starter/basic-routing.html)
+
+---
+
+## 003 - 處理 query string, params 跟 body
+
+Express 是 Nodejs 目前最流行的 web 框架，可以很簡單的架起 API server，試著用 express 架一個 server 監聽 port 3000，直接在 `nodejs-basic-practice` 裡面建一個 `002` 的專案，完成以下幾個 API。
+
+#### GET /api/item/1
+
+Response:
+
+```js
+"1 in params"
+```
+
+#### GET /api/item/100
+
+Response:
+
+```js
+"100 in params"
+```
+
+#### GET /api/item?id=100
+
+Response:
+
+```js
+"100 in query string"
+```
+
+#### POST /api/item
+
+Request
+
+```js
+// body
+{
+  id: 500
+}
+```
+
+Response
+
+```
+"500 in body"
+```
+
+### Reference
+
+- [Express req.params and req.query](https://coursework.vschool.io/express-params-and-query/)
+- [Use ExpressJS to Get URL and POST Parameters](https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters)
+- [How to access the request body when POSTing using Node.js and Express?](https://stackoverflow.com/questions/11625519/how-to-access-the-request-body-when-posting-using-node-js-and-express)
+- [expressjs/body-parser](https://github.com/expressjs/body-parser)
