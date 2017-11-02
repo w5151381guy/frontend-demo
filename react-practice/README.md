@@ -149,3 +149,17 @@ docs
 
 等你 react 學到一個程度之後，就會發現要把 UI 刻出來還滿容易的，難的是怎麼管理數據，包刮什麼時候要去抓數據、各個 component 之間如何溝通、不同頁面如何共享數據等等，之後應該會慢慢有體會。
 
+---
+
+## 006 - 聊天室 - 簡單 UI
+
+之後幾次練習會讓你慢慢做一個即時聊天室，會用到 Google firebase 當後端，沒用過的話沒關係，會慢慢一步一步做，這次先刻個簡單的 UI 出來就好了。<br />
+
+![](https://i.imgur.com/3bmxVOO.gif)
+
+### [demo](https://w5151381guy.github.io/frontend-demo/react-006-larry/)
+
+css 的話看你比較喜歡用哪一種寫都可以，`create-react-app` 有提供可以直接 import css 進來，但如果有一樣的 class name 可能會衝突，react 原本的`inline style` 跟 `styled-components` 分別在有些情況不太好用，所以看你怎麼選擇，我這次是 `inline style` + `styled-components` 一起用。<br />
+
+如果你想多看看其他 library 的話可以看一下[這個比較](https://github.com/MicheleBertoli/css-in-js)，我個人最喜歡用的是 `styled-jsx` 但是他需要設定 babel 所以沒辦法用QQ
+
