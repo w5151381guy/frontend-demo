@@ -96,5 +96,6 @@ Response
 
 - [Express req.params and req.query](https://coursework.vschool.io/express-params-and-query/)
 - [Use ExpressJS to Get URL and POST Parameters](https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters)
+- [Express API Reference req.query](http://expressjs.com/en/api.html#req.query)
 - [How to access the request body when POSTing using Node.js and Express?](https://stackoverflow.com/questions/11625519/how-to-access-the-request-body-when-posting-using-node-js-and-express)
 - [expressjs/body-parser](https://github.com/expressjs/body-parser)
