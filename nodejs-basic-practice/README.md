@@ -111,7 +111,10 @@ Response
 Response:
 
 ```js
-"100 in qs"
+{
+  processTime: "3ms",
+  body: "100 in qs"
+}
 ```
 
 #### POST /api/item
@@ -126,5 +129,13 @@ Request
 }
 ```
 
+Response
+
+```
+{
+  processTime: "15ms",
+  body: "500 in body"
+}
+```
 
 
