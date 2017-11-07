@@ -138,4 +138,11 @@ Response
 }
 ```
 
+### Reference
+
+- [ExpressJS - Middleware](https://www.tutorialspoint.com/expressjs/expressjs_middleware.htm)
+- [How to Measure Execution Time in Node.js](https://blog.tompawlak.org/measure-execution-time-nodejs-javascript)
+- [res.locals](http://expressjs.com/en/api.html#res.locals)
+- [res.json()](http://expressjs.com/en/api.html#res.json)
+
 
