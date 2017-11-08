@@ -2,7 +2,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 
-app.use(bodyParser.json())
+app.use(bodyParser.json(), (req, res, next) => {
+    const processTime = process.hrtime(res.locals.startTime)
+    res.locals.processTime = processTime[1]
+    next()
+})
 
 app.use((req, res, next) => {
     const start = process.hrtime()
@@ -11,7 +15,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/api/item', (req, res, next) => {
-    const processTime = process.hrtime(res.locals.start)
+    const processTime = process.hrtime(res.locals.startTime)
     res.locals.processTime = processTime[1]
     next()
 })
