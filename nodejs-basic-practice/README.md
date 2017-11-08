@@ -99,3 +99,50 @@ Response
 - [Express API Reference req.query](http://expressjs.com/en/api.html#req.query)
 - [How to access the request body when POSTing using Node.js and Express?](https://stackoverflow.com/questions/11625519/how-to-access-the-request-body-when-posting-using-node-js-and-express)
 - [expressjs/body-parser](https://github.com/expressjs/body-parser)
+
+---
+
+### 004 - 用 middleware 處理共用邏輯
+
+一個網站會提供很多 API，雖然每個 API 彼此之間是獨立的，但有一些邏輯常常會需要共用，這時候我們就會把它寫成 middleware，像 `body-parser` 就是個 middleware，他在 request 還沒道路由階段之前就先幫你把 body 切好，讓你在 controller 中有 `req.body` 可以用。這次我們要練習自己寫 middleware，要做的事情跟 003 大致上相同，只是多回傳一個 `processTime` 代表這個 request 的處理時間
+
+#### GET /api/item?id=100
+
+Response:
+
+```js
+{
+  processTime: "3ms",
+  body: "100 in qs"
+}
+```
+
+#### POST /api/item
+
+Request
+
+```js
+// body
+// Content-Type: application/json
+{
+  id: 500
+}
+```
+
+Response
+
+```
+{
+  processTime: "15ms",
+  body: "500 in body"
+}
+```
+
+### Reference
+
+- [ExpressJS - Middleware](https://www.tutorialspoint.com/expressjs/expressjs_middleware.htm)
+- [How to Measure Execution Time in Node.js](https://blog.tompawlak.org/measure-execution-time-nodejs-javascript)
+- [res.locals](http://expressjs.com/en/api.html#res.locals)
+- [res.json()](http://expressjs.com/en/api.html#res.json)
+
+
