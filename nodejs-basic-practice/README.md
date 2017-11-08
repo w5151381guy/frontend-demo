@@ -193,7 +193,7 @@ Response
 }
 ```
 
-#### GET /api/item
+#### GET /api/items
 
 取得所有 item id
 
