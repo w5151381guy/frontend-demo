@@ -104,7 +104,7 @@ Response
 
 ### 004 - 用 middleware 處理共用邏輯
 
-一個網站會提供很多 API，雖然每個 API 彼此之間是獨立的，但有一些邏輯常常會需要共用，這時候我們就會把它寫成 middleware，像 `body-parser` 就是個 middleware，他在 request 還沒道路由階段之前就先幫你把 body 切好，讓你在 controller 中有 `req.body` 可以用。這次我們要練習自己寫 middleware，要做的事情跟 003 大致上相同，只是多回傳一個 `processTime` 代表這個 request 的處理時間
+一個網站會提供很多 API，雖然每個 API 彼此之間是獨立的，但有一些邏輯常常會需要共用，這時候我們就會把它寫成 middleware，像 `body-parser` 就是個 middleware，他在 request 還沒道路由階段之前就先幫你把 body 切好，讓你在 controller 中有 `req.body` 可以用。這次我們要練習自己寫 middleware，要做的事情跟 003 大致上相同，只是多回傳一個 `processTime` 代表這個 request 的處理時間(前端等待的時間)
 
 #### GET /api/item?id=100
 
