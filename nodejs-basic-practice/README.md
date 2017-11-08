@@ -145,4 +145,97 @@ Response
 - [res.locals](http://expressjs.com/en/api.html#res.locals)
 - [res.json()](http://expressjs.com/en/api.html#res.json)
 
+---
+
+### 005 - 基本 CRUD
+
+這次要讓你練習寫一個具有 CRUD 功能的 API server，分別是新增、讀取、更新、刪除，原則上所有的操作都可以分成這四類，這次還不會用到 db，新增一個檔案然後用 fs 去讀寫那個檔案就好了。
+
+#### CRUD 是啥
+
+| 簡稱 | 動作   | HTTP Method |   
+|---  |--------|-------------|
+| C   | Create | POST        |
+| R   | Read   | GET         |
+| U   | Update | PATCH       |
+| D   | Delete | DELETE      |
+
+#### 新增 `POST /api/item`
+
+新增一個 item，並回傳一個不重複的 item id
+
+Request
+
+```js
+// body
+// Content-Type: application/json
+{
+  content: 'Hello World'
+}
+```
+
+Response:
+
+```js
+{
+  id: 'xxxoooaaa'
+}
+```
+
+#### GET /api/item/:itemId
+
+根據 id 取得某個 item
+
+Response
+
+```
+{
+  id: 'xxxoooaaa',
+  content: 'Hello World'
+}
+```
+
+#### GET /api/item
+
+取得所有 item id
+
+Response
+
+```
+{
+  allIds: ['aaa', 'xxx', 'ooo', ...]
+}
+```
+
+#### PATCH /api/item/:itemId
+
+根據 id 修改某個 item
+
+Response
+
+```
+{
+  ok: true
+}
+```
+
+#### DELETE /api/item/:itemId
+
+根據 id 刪除某個 item
+
+Response
+
+```
+{
+  ok: true
+}
+```
+
+### Reference
+
+- [ExpressJS - Middleware](https://www.tutorialspoint.com/expressjs/expressjs_middleware.htm)
+- [How to Measure Execution Time in Node.js](https://blog.tompawlak.org/measure-execution-time-nodejs-javascript)
+- [res.locals](http://expressjs.com/en/api.html#res.locals)
+- [res.json()](http://expressjs.com/en/api.html#res.json)
+
 
