@@ -160,7 +160,7 @@ Response
 | U   | Update | PATCH       |
 | D   | Delete | DELETE      |
 
-#### 新增 `POST /api/item`
+#### POST /api/item
 
 新增一個 item，並回傳一個不重複的 item id
 
