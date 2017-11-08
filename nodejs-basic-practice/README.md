@@ -167,8 +167,6 @@ Response
 Request
 
 ```js
-// body
-// Content-Type: application/json
 {
   content: 'Hello World'
 }
@@ -210,6 +208,14 @@ Response
 #### PATCH /api/item/:itemId
 
 根據 id 修改某個 item
+
+Request
+
+```js
+{
+  content: 'Hello World NEW CONTENT !!!'
+}
+```
 
 Response
 
