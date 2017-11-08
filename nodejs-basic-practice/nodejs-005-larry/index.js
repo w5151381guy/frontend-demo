@@ -40,7 +40,7 @@ app.get('/api/item', (req, res, next) => {
 
 // End Timer
 // Respond to client
-app.use((req, res, next) => {
+app.use((req, res) => {
   const { body, startTime } = res.locals
   const processTime = `${new Date() - startTime}ms`
 
