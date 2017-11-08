@@ -239,9 +239,8 @@ Response
 
 ### Reference
 
-- [ExpressJS - Middleware](https://www.tutorialspoint.com/expressjs/expressjs_middleware.htm)
-- [How to Measure Execution Time in Node.js](https://blog.tompawlak.org/measure-execution-time-nodejs-javascript)
-- [res.locals](http://expressjs.com/en/api.html#res.locals)
-- [res.json()](http://expressjs.com/en/api.html#res.json)
+- [什麼是 REST/RESTful ?](https://ithelp.ithome.com.tw/articles/10157431)
+- [Node.js 檔案系統](https://ithelp.ithome.com.tw/articles/10185422)
+- [File System | Node.js v9.1.0 Documentation](https://nodejs.org/api/fs.html)
 
 
