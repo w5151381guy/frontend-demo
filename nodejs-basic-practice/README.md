@@ -243,4 +243,35 @@ Response
 - [Node.js 檔案系統](https://ithelp.ithome.com.tw/articles/10185422)
 - [File System | Node.js v9.1.0 Documentation](https://nodejs.org/api/fs.html)
 
+---
+
+### 006 - 用 co + generator 做流程控制
+
+很久沒讓你練習新語法了，這次要練習的是 ES6 的 generator，算是 ES6 比較難的一個 feature，有不懂就直接問我吧因為真的有點難XD，generator 顛覆了以前 function 的寫法，他讓你的 function 可以執行到一半暫停，所以很適合用來作非同步流程控制，在 js 裡面很多 design pattern 也是用 generator 實作的
+
+這次要練習的是把
+
+```js
+runA().then(runB).then(runC).then(runD)
+```
+
+改成
+
+```js
+co(function* (){
+  yield runA()
+  yield runB()
+  yield runC()
+  yield runD()
+})
+```
+
+### Reference
+
+- [ES6 Generators 基礎教學](http://andyyou.logdown.com/posts/276655-es6-generators-teaching)
+- [ES6 Generator基礎](http://huli.logdown.com/posts/292331-javascript-es6-generator-foundation)
+- [Generator 函数的含义与用法](http://www.ruanyifeng.com/blog/2015/04/generator.html)
+- [The Basics Of ES6 Generators](https://davidwalsh.name/es6-generators)
+- [快樂玩 ES6 Generator，從 co 起手式開始](http://fred-zone.blogspot.tw/2015/07/es6-generator-co.html)
+- [tj/co](https://github.com/tj/co)
 
