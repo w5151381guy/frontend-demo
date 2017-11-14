@@ -252,19 +252,28 @@ Response
 這次要練習的是把
 
 ```js
-runA().then(runB).then(runC).then(runD)
+runA()
+  .then(resultA => runB(resultA))
+  .then(resultB => runC(resultB))
+  .then(resultC => runD(resultC))
+  .then(resultD => {
+    console.log(resultD)
+  })
 ```
 
 改成
 
 ```js
-co(function* (){
-  yield runA()
-  yield runB()
-  yield runC()
-  yield runD()
+co(function*() {
+  const resultA = yield runA()
+  const resultB = yield runB()
+  const resultC = yield runC()
+  const resultD = yield runD()
+  console.log(resultD)
 })
 ```
+
+用 co + generator 可以把非同步寫得像同步一樣，也會比較好做複雜的流程控制
 
 ### Reference
 
