@@ -249,7 +249,7 @@ Response
 
 很久沒讓你練習新語法了，這次要練習的是 ES6 的 generator，算是 ES6 比較難的一個 feature，有不懂就直接問我吧因為真的有點難XD，generator 顛覆了以前 function 的寫法，他讓你的 function 可以執行到一半暫停，所以很適合用來作非同步流程控制，在 js 裡面很多 design pattern 也是用 generator 實作的
 
-這次要練習的是把
+這次要練習的是把 005 裡面的
 
 ```js
 runA()
@@ -273,7 +273,7 @@ co(function*() {
 })
 ```
 
-用 co + generator 可以把非同步寫得像同步一樣，也會比較好做複雜的流程控制
+你可以直接複製一份 005 過來改就好了。用 co + generator 可以把非同步寫得像同步一樣，也會比較好做複雜的流程控制
 
 ### Reference
 
