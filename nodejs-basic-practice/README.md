@@ -266,9 +266,9 @@ runA()
 ```js
 co(function*() {
   const resultA = yield runA()
-  const resultB = yield runB()
-  const resultC = yield runC()
-  const resultD = yield runD()
+  const resultB = yield runB(resultA)
+  const resultC = yield runC(resultB)
+  const resultD = yield runD(resultC)
   console.log(resultD)
 })
 ```
