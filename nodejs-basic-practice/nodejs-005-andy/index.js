@@ -7,8 +7,9 @@ const app = express()
 app.use(bodyParser.json())
 
 app.get('/api/item/:itemid', (req, res) => {
-    file.readContent(req.params.itemid)
-	    .then(data => {
+    file.readContent()
+	    .then(data => file.findContent(req.params.itemid, data))
+        .then(data => {
 			const {id, content} = data[0]
 	        res.json({
                 id,
@@ -18,7 +19,8 @@ app.get('/api/item/:itemid', (req, res) => {
 })
 
 app.post('/api/item', (req, res) => {
-    file.writeContent(req.body.content)
+    file.readContent()
+        .then(data => file.writeContent(data, req.body.content))
         .then(id => {
             res.json({
                 id,
@@ -27,13 +29,15 @@ app.post('/api/item', (req, res) => {
 })
 
 app.patch('/api/item/:itemid', (req, res) => {
-    file.updateContent(req.params.itemid, req.body.content)
-        .then(res.json({ok: true}))
+    file.readContent()
+        .then(data => file.updateContent(data, req.params.itemid, req.body.content))
+        .then(response => res.send(response))
 })
 
 app.delete('/api/item/:itemid', (req, res) => {
-    file.deleteContent(req.params.itemid)
-        .then(res.json({ok: true}))
+    file.readContent()
+        .then(data => file.deleteContent(data, req.params.itemid))
+        .then(response => res.send(response))
 })
 
 app.listen(3000)
