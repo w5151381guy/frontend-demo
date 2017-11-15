@@ -1,7 +1,7 @@
 const fs = require('fs')
 const uuidv4 = require('uuid/v4')
 
-function readContent(id) {
+function readContent() {
     return new Promise((resolve, reject) => {
         fs.readFile('data.txt', (err , data) => {
             if(err) reject(err)
