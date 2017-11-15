@@ -6,7 +6,7 @@ function readContent(id) {
         fs.readFile('data.txt', (err , data) => {
             if(err) reject(err)
             const data_string = data.toString().replace('}{', '},{')
-			resolve(data_string)
+            resolve(data_string)
         })
     })
 }
@@ -19,11 +19,11 @@ function findContent(id, data) {
 
 function writeContent(origin_content, content) {
     const id = uuidv4()
-	const new_content = origin_content + JSON.stringify({id, content})
+    const new_content = origin_content + JSON.stringify({id, content})
     return new Promise((resolve, reject) => {
         fs.writeFile('data.txt', new_content, err => {
-		    if(err) reject(err)
-			resolve(id)
+            if(err) reject(err)
+            resolve(id)
         })
     })
 }
@@ -35,7 +35,7 @@ function updateContent(data, id, content) {
     return new Promise((resolve, reject) => {
         fs.writeFile('data.txt', new_data, err => {
             if(err) reject(err)
-			resolve({ok: true})
+            resolve({ok: true})
         })
     })
 }

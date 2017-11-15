@@ -8,12 +8,12 @@ app.use(bodyParser.json())
 
 app.get('/api/item/:itemid', (req, res) => {
     file.readContent()
-	    .then(data => file.findContent(req.params.itemid, data))
+        .then(data => file.findContent(req.params.itemid, data))
         .then(data => {
-			const {id, content} = data[0]
-	        res.json({
+            const {id, content} = data[0]
+            res.json({
                 id,
-	            content,
+                content,
             })
         })
 })
