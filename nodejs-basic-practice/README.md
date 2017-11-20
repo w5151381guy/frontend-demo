@@ -281,14 +281,5 @@ co(function*() {
 
 [https://ajax-practice-server.herokuapp.com/random](https://ajax-practice-server.herokuapp.com/random) <br />
 
-這個網址
-
-### Reference
-
-- [ES6 Generators 基礎教學](http://andyyou.logdown.com/posts/276655-es6-generators-teaching)
-- [ES6 Generator基礎](http://huli.logdown.com/posts/292331-javascript-es6-generator-foundation)
-- [Generator 函数的含义与用法](http://www.ruanyifeng.com/blog/2015/04/generator.html)
-- [The Basics Of ES6 Generators](https://davidwalsh.name/es6-generators)
-- [快樂玩 ES6 Generator，從 co 起手式開始](http://fred-zone.blogspot.tw/2015/07/es6-generator-co.html)
-- [tj/co](https://github.com/tj/co)
+上面那個網址點進去會看到 `Wait` 或是 `Hello World`，兩個字串是隨機出現的，重新整理幾次就會看到兩個結果。這次要做的事情是發個 request 去要這個字串，如果拿到 `Wait` 就等 0.3 秒再發 request 拿，一直重複，直到拿到 `Hello World` 為止，然後輸出總共試了幾次才拿到 `Hello World`
 
