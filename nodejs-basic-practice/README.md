@@ -283,5 +283,7 @@ co(function*() {
 
 上面那個網址點進去會看到 `Wait` 或是 `Hello World`，兩個字串是隨機出現的，重新整理幾次就會看到兩個結果。 <br />
 
-這次要做的事情是發個 request 去要這個字串，如果拿到 `Wait` 就等 0.3 秒再發 request 拿，一直重複直到拿到 `Hello World`，如果第 5 次重試還沒拿到就輸出 `can not get`，然後輸出總共試了幾次才拿到 `Hello World`，如果第一次發 request 就拿到就輸出 1，試了 3
+這次要做的事情是發個 request 去要這個字串，如果拿到 `Wait` 就等 0.3 秒再發 request 拿，重複 5 次直到拿到 `Hello World` <br />
+
+如果 5 次以內就拿到，就輸出總共試了幾次才拿到，如果試了 5 次都沒拿到，就輸出 `can not get`
 
