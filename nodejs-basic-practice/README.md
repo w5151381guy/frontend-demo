@@ -275,6 +275,14 @@ co(function*() {
 
 你可以直接複製一份 005 過來改就好了。用 co + generator 可以把非同步寫得像同步一樣，也會比較好做複雜的流程控制，等你熟練了之後你可以自己看想用哪一種，沒有一定要 co + generator(我自己就很少用)，就跟 react 跟 jq 一樣，如果只是寫 todo list 還要要求組件化、數據流等等確實太過麻煩，所以你可以根據應用場景自己考慮一下。
 
+---
+
+### 007 - co + generator VS Promise
+
+[https://ajax-practice-server.herokuapp.com/random](https://ajax-practice-server.herokuapp.com/random) <br />
+
+這個網址
+
 ### Reference
 
 - [ES6 Generators 基礎教學](http://andyyou.logdown.com/posts/276655-es6-generators-teaching)
