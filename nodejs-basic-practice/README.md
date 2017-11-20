@@ -281,5 +281,7 @@ co(function*() {
 
 [https://ajax-practice-server.herokuapp.com/random](https://ajax-practice-server.herokuapp.com/random) <br />
 
-上面那個網址點進去會看到 `Wait` 或是 `Hello World`，兩個字串是隨機出現的，重新整理幾次就會看到兩個結果。這次要做的事情是發個 request 去要這個字串，如果拿到 `Wait` 就等 0.3 秒再發 request 拿，一直重複，直到拿到 `Hello World` 為止，然後輸出總共試了幾次才拿到 `Hello World`
+上面那個網址點進去會看到 `Wait` 或是 `Hello World`，兩個字串是隨機出現的，重新整理幾次就會看到兩個結果。 <br />
+
+這次要做的事情是發個 request 去要這個字串，如果拿到 `Wait` 就等 0.3 秒再發 request 拿，一直重複直到拿到 `Hello World`，如果第 5 次重試還沒拿到就輸出 `can not get`，然後輸出總共試了幾次才拿到 `Hello World`，如果第一次發 request 就拿到就輸出 1，試了 3
 
