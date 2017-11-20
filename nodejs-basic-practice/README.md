@@ -276,11 +276,22 @@ co(function*() {
 你可以直接複製一份 005 過來改就好了。用 co + generator 可以把非同步寫得像同步一樣，也會比較好做複雜的流程控制，等你熟練了之後你可以自己看想用哪一種，沒有一定要 co + generator(我自己就很少用)，就跟 react 跟 jq 一樣，如果只是寫 todo list 還要要求組件化、數據流等等確實太過麻煩，所以你可以根據應用場景自己考慮一下。
 
 ### Reference
-
 - [ES6 Generators 基礎教學](http://andyyou.logdown.com/posts/276655-es6-generators-teaching)
 - [ES6 Generator基礎](http://huli.logdown.com/posts/292331-javascript-es6-generator-foundation)
 - [Generator 函数的含义与用法](http://www.ruanyifeng.com/blog/2015/04/generator.html)
 - [The Basics Of ES6 Generators](https://davidwalsh.name/es6-generators)
 - [快樂玩 ES6 Generator，從 co 起手式開始](http://fred-zone.blogspot.tw/2015/07/es6-generator-co.html)
 - [tj/co](https://github.com/tj/co)
+
+---
+
+### 007 - Promise VS co + generator
+
+[https://ajax-practice-server.herokuapp.com/random](https://ajax-practice-server.herokuapp.com/random) <br />
+
+上面那個網址點進去會看到 `Wait` 或是 `Hello World`，兩個字串是隨機出現的，重新整理幾次就會看到兩個結果。這次要做的事情是發個 request 去要這個字串，如果拿到 `Wait` 就等 0.2 秒再發 request 拿，重複最多 5 次直到拿到 `Hello World` <br />
+
+如果 5 次以內就拿到，就輸出一個數字表示試了幾次才拿到，如果試了 5 次都沒拿到，就輸出 `can not get` <br />
+
+這次的要寫兩份程式分別是 `promise.js` 跟 `generator.js`，`promise.js` 內用 promise 實作這個流程，`generator.js` 則用 co + generator 做，有些共用的邏輯(發 request 確認是不是 `Wait` 或是等待 0.2 秒)可以寫在一個 utils.js 內，然後在 `promise.js` 或是 `generator.js` 內 require 去用，我最後會跑 `node promise.js` 跟 `node generator.js` 去測你寫的程式
 
