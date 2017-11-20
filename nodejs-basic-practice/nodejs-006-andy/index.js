@@ -19,25 +19,24 @@ app.get('/api/item/:itemid', (req, res) => {
 })
 
 app.post('/api/item', (req, res) => {
-    file.readContent()
-        .then(data => file.writeContent(req.body.content))
-        .then(id => {
-            res.json({
-                id,
-            })
-        })
+    co(function *() {
+        const id = yield file.writeContent(req.body.content)
+        res.json({id,})
+    })
 })
 
 app.patch('/api/item/:itemid', (req, res) => {
-    file.readContent()
-        .then(data => file.updateContent(req.params.itemid, req.body.content))
-        .then(response => res.send(response))
+    co(function *() {
+        const response = yield file.updateContent(req.params.itemid, req.body.content)
+        res.send(response)
+    })
 })
 
 app.delete('/api/item/:itemid', (req, res) => {
-    file.readContent()
-        .then(data => file.deleteContent(req.params.itemid))
-        .then(response => res.send(response))
+    co(function *() {
+        const response = yield file.deleteContent(req.params.itemid)
+        res.send(response)
+    })
 })
 
 app.listen(3000)
