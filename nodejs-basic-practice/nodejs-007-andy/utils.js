@@ -1,5 +1,5 @@
 const axios = require('axios')
-let msg = []
+
 function getData() {
     return axios
         .get('https://ajax-practice-server.herokuapp.com/random')
@@ -7,20 +7,12 @@ function getData() {
         .catch(err => console.log(err.response))
 }
 
-function compare(response_msg) {
-    msg.push(response_msg)
-    console.log(msg)
-    return response_msg === "Hello World" ? `send ${msg.length} time(s) to get Hello World` : resendRequest()
-}
-
 function resendRequest() {
-    if(msg.length > 5) return "can not get Hello World"
-    else {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            getData()
-                .then(compare)
+            resolve()
         }, 200)
-    }
+    })
 }
 
-module.exports = {getData, compare}
+module.exports = {getData, resendRequest}

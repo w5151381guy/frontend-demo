@@ -1,12 +1,19 @@
-const express = require('express')
 const utils = require('./utils')
 
-const app = express()
+let count = 0
 
-app.get('/', (req, res) => {
-    utils.getData()
-        .then(utils.compare)
-        .then(msg => res.send(msg))
-})
+let promise = Promise.resolve()
 
-app.listen(3000)
+for(let i = 0; i < 5; i++) {
+    promise = promise.then(utils.getData).then(res_msg => {
+        count++
+        console.log(res_msg)
+        if(res_msg === 'Hello World') return Promise.reject('finish')
+        return utils.resendRequest()
+    })
+}
+
+promise
+    .then(res => 'can not get')
+    .catch(res => count)
+    .then(output => console.log(output))
