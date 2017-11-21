@@ -6,6 +6,7 @@ co(function*() {
   while (count < 5) {
     count++
     const text = yield getRandomText()
+    console.log(text)
     if (text !== 'Wait') {
       break
     }

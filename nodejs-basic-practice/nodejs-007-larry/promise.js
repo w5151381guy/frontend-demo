@@ -6,6 +6,7 @@ let getRandomTextPromise = Promise.resolve()
 for (let i = 0; i < 5; i++) {
   getRandomTextPromise = getRandomTextPromise.then(getRandomText).then(text => {
     count++
+    console.log(text)
     if (text !== 'Wait') {
       return Promise.reject('finished')
     }
