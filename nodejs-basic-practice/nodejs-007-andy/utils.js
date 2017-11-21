@@ -9,9 +9,7 @@ function getData() {
 
 function resendRequest() {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve()
-        }, 200)
+        setTimeout(resolve, 200)
     })
 }
 
