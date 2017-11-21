@@ -7,8 +7,13 @@ co(function*() {
     count++
     const text = yield getRandomText()
     console.log(text)
+
     if (text !== 'Wait') {
       break
+    }
+
+    if (count !== 5) {
+      yield wait()
     }
   }
 
