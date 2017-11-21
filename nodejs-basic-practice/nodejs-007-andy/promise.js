@@ -15,5 +15,5 @@ for(let i = 0; i < 5; i++) {
 
 promise
     .then(res => 'can not get')
-    .catch(res => count)
+    .catch(res => res === 'finish' ? count : res)
     .then(output => console.log(output))
