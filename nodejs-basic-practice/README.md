@@ -295,6 +295,8 @@ co(function*() {
 
 這次的要寫兩份程式分別是 `promise.js` 跟 `generator.js`，`promise.js` 內用 promise 實作這個流程，`generator.js` 則用 co + generator 做，有些共用的邏輯(發 request 確認是不是 `Wait` 或是等待 0.2 秒)可以寫在一個 utils.js 內，然後在 `promise.js` 或是 `generator.js` 內 require 去用，我最後會跑 `node promise.js` 跟 `node generator.js` 去測你寫的程式
 
+__抓了四次才拿到 `Hello World`，所以輸出 4__
+
 ![](https://i.imgur.com/645lfix.gif)
 
 ![](https://i.imgur.com/mexr0nC.gif)
