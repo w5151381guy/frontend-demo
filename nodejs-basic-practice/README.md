@@ -289,9 +289,13 @@ co(function*() {
 
 [https://ajax-practice-server.herokuapp.com/random](https://ajax-practice-server.herokuapp.com/random) <br />
 
-上面那個網址點進去會看到 `Wait` 或是 `Hello World`，兩個字串是隨機出現的，重新整理幾次就會看到兩個結果。這次要做的事情是發個 request 去要這個字串，如果拿到 `Wait` 就等 0.2 秒再發 request 拿，重複最多 5 次直到拿到 `Hello World` <br />
+上面那個網址點進去會看到 `Wait` 或是 `Hello World`，兩個字串是隨機出現的，重新整理幾次就會看到兩個結果。這次要做的事情是寫一個爬蟲到上面那個網址去抓這個字串，如果拿到 `Wait` 就等 0.2 秒再發 request 去抓，重複最多 5 次直到拿到 `Hello World` <br />
 
 如果 5 次以內就拿到，就輸出一個數字表示試了幾次才拿到，如果試了 5 次都沒拿到，就輸出 `can not get` <br />
 
 這次的要寫兩份程式分別是 `promise.js` 跟 `generator.js`，`promise.js` 內用 promise 實作這個流程，`generator.js` 則用 co + generator 做，有些共用的邏輯(發 request 確認是不是 `Wait` 或是等待 0.2 秒)可以寫在一個 utils.js 內，然後在 `promise.js` 或是 `generator.js` 內 require 去用，我最後會跑 `node promise.js` 跟 `node generator.js` 去測你寫的程式
+
+![](https://i.imgur.com/645lfix.gif)
+
+![](https://i.imgur.com/mexr0nC.gif)
 
