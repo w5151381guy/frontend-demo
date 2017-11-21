@@ -299,5 +299,7 @@ __抓了四次才拿到 `Hello World`，所以輸出 4__
 
 ![](https://i.imgur.com/645lfix.gif)
 
+__五次都拿到 `Wait`，所以輸出 `can not get`__
+
 ![](https://i.imgur.com/mexr0nC.gif)
 
