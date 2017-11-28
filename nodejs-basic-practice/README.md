@@ -321,6 +321,6 @@ module.exports = {
 
 ### Reference
 
-[Node.JS 串接 MongoDB](https://ithelp.ithome.com.tw/articles/10186483)
-[MongoDB Node.JS Driver](https://mongodb.github.io/node-mongodb-native/)
+- [Node.JS 串接 MongoDB](https://ithelp.ithome.com.tw/articles/10186483)
+- [MongoDB Node.JS Driver](https://mongodb.github.io/node-mongodb-native/)
 
