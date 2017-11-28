@@ -309,7 +309,15 @@ __五次都拿到 `Wait`，所以輸出 `can not get`__
 
 這次要讓你練習用第三方的 mongo host 完成 CRUD，這樣就不用自己架 mongodb server，先到 [mlab](https://mlab.com/home) 註冊一組帳號，然後新增一個 database，plan 選擇不用錢的 __sandbox__ ，他會給你 0.5 GB 的免費空間，建好 database 之後進去裡面可以拿到一組像是 `mongodb://<dbuser>:<dbpassword>@ds019480.mlab.com:19480/larry-database` 的 mongodb URI，用這個 URI 就可以連到 mlab 然後開始使用。<br />
 
-這次要做的事情跟
+這次要做的事情跟之前一樣，可以直接複製之前的 code，然後把之前用檔案存的部份，改成用資料庫存 <br />
+
+對了記得，把你的資料庫的路徑還有帳號密碼寫成另外一個 `config.js`，不要把資料庫的帳號密碼 push 上來，`config.js` 可能會像這樣
+
+```js
+module.exports = {
+  mongoURI: 'mongodb://<dbuser>:<dbpassword>@ds125555.mlab.com:25555/lol-notifier'
+}
+```
 
 
 Node.JS 串接 MongoDB
