@@ -307,7 +307,10 @@ __五次都拿到 `Wait`，所以輸出 `can not get`__
 
 ### 008 - mongodb crud
 
-這次要讓你練習用第三方的 mongo host 完成 CRUD，這樣就不用自己架 mongodb server，先到 [mlab](https://mlab.com/home) 註冊一組帳號，然後新增一個 database，plan 選擇不用錢的 __sandbox__ ，他會給你 0.5 GB 的免費空間，建好 database 之後進去裡面可以拿到一組像是 `mongodb://<dbuser>:<dbpassword>@ds019480.mlab.com:19480/larry-database` 的 mongodb URI，用這個 URI 就可以連到 mlab 然後開始使用。
+這次要讓你練習用第三方的 mongo host 完成 CRUD，這樣就不用自己架 mongodb server，先到 [mlab](https://mlab.com/home) 註冊一組帳號，然後新增一個 database，plan 選擇不用錢的 __sandbox__ ，他會給你 0.5 GB 的免費空間，建好 database 之後進去裡面可以拿到一組像是 `mongodb://<dbuser>:<dbpassword>@ds019480.mlab.com:19480/larry-database` 的 mongodb URI，用這個 URI 就可以連到 mlab 然後開始使用。<br />
+
+這次要做的事情跟
 
 
+Node.JS 串接 MongoDB
 
