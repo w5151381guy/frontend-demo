@@ -1,16 +1,15 @@
-const MongoClient = require('mongodb').MongoClient
+const {MongoClient, ObjectID} = require('mongodb')
 const config = require('./config')
-let db
+let col
 
 MongoClient.connect(config.mongoURI, (err, database) => {
     if(err) console.log(err)
-    else db = database
+    else col = database.db('nodejs-practice').collection('practice')
 })
 
-function getData(itemid) {
-    let col = db.collection('practice')
+function getData(_id) {
     return new Promise((resolve, reject) => {
-        col.find({'_id': itemid}).toArray((err, result) => {
+        col.find(_id).toArray((err, result) => {
             if(err) reject(err)
             else resolve(result)
         })
@@ -18,19 +17,17 @@ function getData(itemid) {
 }
 
 function insertData(content) {
-    let col = db.collection('practice')
     return new Promise((resolve, reject) => {
-        col.insertOne(JSON.stringify({content}), (err, result) => {
+        col.insertOne(JSON.parse(JSON.stringify({content})), (err, result) => {
             if(err) reject(err)
-            else resolve(result._id)
+            else resolve(result.insertedId)
         })
     })
 }
 
 function updateData(_id, content) {
-    let col = db.collection('practice')
     return new Promise((resolve, reject) => {
-        col.updateOne({_id}, {$set: {content}}, (err, result) => {
+        col.updateOne({'_id': ObjectID(_id)}, {$set: JSON.parse(JSON.stringify({content}))}, (err, result) => {
             if(err) reject(err)
             else resolve({ok: 'true'})
         })
@@ -38,9 +35,8 @@ function updateData(_id, content) {
 }
 
 function deleteData(_id) {
-    let col = db.collection('practice')
     return new Promise((resolve, reject) => {
-        col.remove({_id}, (err, result) => {
+        col.remove({'_id': ObjectID(_id)}, (err, result) => {
             if(err) reject(err)
             else resolve({ok: 'true'})
         })

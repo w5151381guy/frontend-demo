@@ -10,15 +10,15 @@ app.use(bodyParser.json())
 app.get('/api/item/:itemid', (req, res) => {
     co(function*(){
         const resultData = yield database.getData(req.params.itemid)
-        const {id, content} = resultData[0]
+        const {_id, content} = resultData[0]
         res.json({
-            id,
+            _id,
             content,
         })
     })
 })
 
-app.post('api/item', (req, res) => {
+app.post('/api/item', (req, res) => {
     co(function*(){
         const id = yield database.insertData(req.body.content)
         res.json({id})
@@ -39,4 +39,4 @@ app.delete('/api/item/:itemid', (req, res) => {
     })
 })
 
-app.listen(3000)
+app.listen(5000)
