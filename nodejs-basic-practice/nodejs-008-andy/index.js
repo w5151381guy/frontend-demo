@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 app.get('/api/item/:itemid', (req, res) => {
     co(function*(){
         const resultData = yield database.getData(req.params.itemid)
-        const {_id, content} = resultData[0]
+        const {_id, content} = resultData
         res.json({
             _id,
             content,
@@ -28,15 +28,15 @@ app.post('/api/item', (req, res) => {
 app.patch('/api/item/:itemid', (req, res) => {
     co(function *() {
         const response = yield database.updateData(req.params.itemid, req.body.content)
-        res.send(response)
+        res.json({'ok': true})
     })
 })
 
 app.delete('/api/item/:itemid', (req, res) => {
     co(function *() {
         const response = yield database.deleteData(req.params.itemid)
-        res.send(response)
+        res.json({'ok': true})
     })
 })
 
-app.listen(5000)
+app.listen(3000)

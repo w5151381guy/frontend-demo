@@ -11,14 +11,14 @@ function getData(_id) {
     return new Promise((resolve, reject) => {
         col.find(_id).toArray((err, result) => {
             if(err) reject(err)
-            else resolve(result)
+            else resolve(result[0])
         })
     })
 }
 
 function insertData(content) {
     return new Promise((resolve, reject) => {
-        col.insertOne(JSON.parse(JSON.stringify({content})), (err, result) => {
+        col.insertOne({content}, (err, result) => {
             if(err) reject(err)
             else resolve(result.insertedId)
         })
@@ -27,9 +27,9 @@ function insertData(content) {
 
 function updateData(_id, content) {
     return new Promise((resolve, reject) => {
-        col.updateOne({'_id': ObjectID(_id)}, {$set: JSON.parse(JSON.stringify({content}))}, (err, result) => {
+        col.updateOne({'_id': ObjectID(_id)}, {$set: {content}}, (err, result) => {
             if(err) reject(err)
-            else resolve({ok: 'true'})
+            else resolve()
         })
     })
 }
@@ -38,7 +38,7 @@ function deleteData(_id) {
     return new Promise((resolve, reject) => {
         col.remove({'_id': ObjectID(_id)}, (err, result) => {
             if(err) reject(err)
-            else resolve({ok: 'true'})
+            else resolve()
         })
     })
 }
