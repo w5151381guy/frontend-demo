@@ -324,3 +324,53 @@ module.exports = {
 - [Node.JS 串接 MongoDB](https://ithelp.ithome.com.tw/articles/10186483)
 - [MongoDB Node.JS Driver](https://mongodb.github.io/node-mongodb-native/)
 
+---
+
+### 009 - ES7 async/await
+
+async/await 是 ES7 的新語法，是目前管理非同步流程的最佳解決方案，從 node `7.6.0` 就開始支援，前端的話支援度還不太高，要用在前端的話要用 babel 轉一下<br />
+
+因為網路上找不到寫得很好的教學，所以我這邊大概講一下，看不太懂的話可以再看看下面的參考資料
+
+#### 1. async function 必定回傳 promise
+
+下面這兩個 function 都回傳一個 promise，那他們有什麼不一樣呢？其實完全一樣，只是 __async function 會保證他回傳的一定是個 promise__，而普通 function 不一定
+
+```js
+function sleep1(){
+  return new Promise(resolve => {
+    setTimeout(resolve, 3000)
+  })
+}
+
+async function sleep2(){
+  return new Promise(resolve => {
+    setTimeout(resolve, 3000)
+  })
+}
+```
+
+#### 2. 如果 async function 裡面沒有回傳 promise 會怎樣
+
+`foo1` 是個非常簡單的同步 function，回傳 100 <br />
+
+`foo2` 是個非同步 function，他的回傳值是個 promise，`foo2().then(res => { console.log(res) }) // 100` <br />
+
+`foo3` 雖然直接 `return 100`，但是剛剛說過 __async function 一定一定一定要回傳 promise，你不回傳 promise 他就會幫你包裝成 promise__ ，所以他這個 100 會被包進 promise。讓 foo3() 是一個 promise 物件，所以 `foo2` 跟 `foo3` 其實是一模一樣的，要這樣用它，`foo3().then(res => { console.log(res) }) // 100` <br />
+
+```js
+function foo1(){
+  return 100
+}
+
+function foo2(){
+  return new Promise(resolve => {
+    resolve(100)
+  })
+}
+
+async function foo3(){
+  return 100
+}
+```
+
