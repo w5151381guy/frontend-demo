@@ -8,39 +8,25 @@ MongoClient.connect(config.mongoURI, (err, database) => {
 })
 
 function getData(_id) {
-    return new Promise((resolve, reject) => {
-        col.find(_id).toArray((err, result) => {
-            if(err) reject(err)
-            else resolve(result[0])
-        })
-    })
+    return col
+        .findOne({'_id': ObjectID(_id)})
+        .then(result => result)
+        .catch(err => console.log(err))
 }
 
 function insertData(content) {
-    return new Promise((resolve, reject) => {
-        col.insertOne({content}, (err, result) => {
-            if(err) reject(err)
-            else resolve(result.insertedId)
-        })
-    })
+    return col
+        .insertOne({content})
+        .then(result => result.insertedId)
+        .catch(err => consolr.log(err))
 }
 
 function updateData(_id, content) {
-    return new Promise((resolve, reject) => {
-        col.updateOne({'_id': ObjectID(_id)}, {$set: {content}}, (err, result) => {
-            if(err) reject(err)
-            else resolve()
-        })
-    })
+    return col.updateOne({'_id': ObjectID(_id)}, {$set: {content}})
 }
 
 function deleteData(_id) {
-    return new Promise((resolve, reject) => {
-        col.remove({'_id': ObjectID(_id)}, (err, result) => {
-            if(err) reject(err)
-            else resolve()
-        })
-    })
+    return col.findAndRemove({'_id': ObjectID(_id)})
 }
 
 module.exports = {getData, insertData, updateData, deleteData}
