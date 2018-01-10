@@ -410,5 +410,65 @@ async function foo3(){
 }
 ```
 
-#### 004. 可讀性對比
-  
+#### 004. 錯誤處理
+
+錯誤處理就像寫同步程式碼一樣用 try/catch 就可以了
+
+```js
+async function foo1(){
+  return runA()
+    .then(resultA => runB(resultA))
+    .then(resultB => {
+      console.log(resultB)
+    })
+    .catch(err => {
+      console.error(err)
+    })
+}
+
+async function foo2(){
+  co(function*() {
+    try {
+      const resultA = yield runA()
+      const resultB = yield runB(resultA)
+      console.log(resultB)
+    } catch(err){
+      console.error(err)
+    }
+  })
+}
+
+async function foo3(){
+  try {
+    const resultA = await runA()
+    const resultB = await runB(resultA)
+    console.log(resultB)
+  } catch(err) {
+    console.error(err)
+  }
+}
+```
+
+#### 005. 套用在現有專案
+  
+這邊要提醒一下，`await` 這個關鍵字只能用在 async function 裡面，所以最好的作法就是把所有非同步操作都宣告成 async function，這樣也可以一眼看出一個 function 是不是非同步
+
+```js
+// database.js
+
+function insertData(content) {
+  return col
+    .insertOne({ content })
+    .then(result => result.insertedId)
+    .catch(err => console.log(err))
+}
+
+async function insertData2(content) {
+  try {
+    const result = await col.insertOne({ content })
+    return result.insertedId
+  } catch (err) {
+    console.log(err)
+  }
+}
+```
