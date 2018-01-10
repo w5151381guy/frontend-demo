@@ -378,7 +378,7 @@ async function 就這麼簡單，簡而言之：如果你回傳 promise，那他
 
 #### 3. 用 await 等待 promise
 
-現在要實作睡三秒的功能，`foo1` 是用 promise 實作，而 `foo2` 是用 await，兩個的效果完全一樣，只是 `foo1` 用 `.then(...)` 來等待 promise 完成，而有了 await 之後可以直接用 `await sleep()` 來等待 promise 完成
+現在要實作睡三秒的功能，`foo1` 用基本的 promise 實作，`foo2` 用 co + generator，`foo3` 則是用 await。三個的效果完全一樣，而且也都回傳 promise，只是 `foo1` 用 `.then(...)` 來等待 sleep() 完成、`foo2` 用 yield，而有了 await 之後可以直接用 `await sleep()` 來等待 promise 完成
 
 ```js
 // 睡三秒
@@ -396,6 +396,14 @@ async function foo1(){
 }
 
 async function foo2(){
+  return co(function*(){
+    console.log('before sleep')
+    yield sleep()
+    console.log('after sleep')
+  })
+}
+
+async function foo3(){
   console.log('before sleep')
   await sleep()
   console.log('after sleep')
