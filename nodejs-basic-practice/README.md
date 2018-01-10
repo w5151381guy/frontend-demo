@@ -502,4 +502,4 @@ app.get('/api/item/:itemid', async (req, res) => {
 
 #### 作業
 
-把 008 複製一份叫做 009，然後把
+把 008 複製一份叫做 009，然後把任何非同步操作都宣告成 async function、把 `co + generator` 改成 `async/await`
