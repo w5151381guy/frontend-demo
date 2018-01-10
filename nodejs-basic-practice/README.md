@@ -352,11 +352,11 @@ async function sleep2(){
 
 #### 2. 如果 async function 裡面沒有回傳 promise 會怎樣
 
-`foo1` 是個非常簡單的同步 function <br />
+`foo1` 是個非常簡單的同步 function，回傳 100 <br />
 
 `foo2` 是個非同步 function，他的回傳值是個 promise，`foo2().then(res => { console.log(res) }) // 100` <br />
 
-`foo3` 雖然直接 `return 100`，但是剛剛說過 async function 一定要回傳 promise，所以他這個 100 會被包裝進 promise。簡而言之，`foo2` 跟 `foo3` 完全一模一樣，你不回傳 promise 他就會幫你包裝成 promise，所以要這樣用它，`foo3().then(res => { console.log(res) }) // 100` <br />
+`foo3` 雖然直接 `return 100`，但是剛剛說過 __async function 一定要回傳 promise__ ，所以他這個 100 會被包裝進 promise。簡而言之，`foo2` 跟 `foo3` 完全一模一樣，你不回傳 promise 他就會幫你包裝成 promise，所以要這樣用它，`foo3().then(res => { console.log(res) }) // 100` <br />
 
 ```js
 function foo1(){
