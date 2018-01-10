@@ -493,13 +493,15 @@ app.get('/api/item/:itemid', (req, res) => {
 // after
 app.get('/api/item/:itemid', async (req, res) => {
   const { _id, content } = await database.getData(req.params.itemid)
-  res.json({
-    _id,
-    content,
-  })
+  res.json({ _id, content })
 })
 ```
 
 #### 作業
 
 把 008 複製一份叫做 009，然後把任何非同步操作都宣告成 async function、把 `co + generator` 改成 `async/await`
+
+### Reerence
+
+- [Promise, generator, async 與 ES6](http://huli.logdown.com/posts/292655-javascript-promise-generator-async-es6)
+- [告別 JavaScript 的 Promise！迎接 Async/Await 的到來](https://jigsawye.com/2016/04/18/understanding-javascript-async-await/)
