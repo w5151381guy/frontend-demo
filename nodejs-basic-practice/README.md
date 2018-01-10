@@ -450,12 +450,13 @@ async function foo3(){
 ```
 
 #### 005. 套用在現有專案
-  
+
 這邊要提醒一下，`await` 這個關鍵字只能用在 async function 裡面，所以最好的作法就是把所有非同步操作都宣告成 async function，這樣也可以一眼看出一個 function 是不是非同步
 
 ```js
 // database.js
 
+// before
 function insertData(content) {
   return col
     .insertOne({ content })
@@ -463,6 +464,7 @@ function insertData(content) {
     .catch(err => console.log(err))
 }
 
+// after
 async function insertData2(content) {
   try {
     const result = await col.insertOne({ content })
@@ -472,3 +474,32 @@ async function insertData2(content) {
   }
 }
 ```
+
+```js
+// index.js
+
+// before
+app.get('/api/item/:itemid', (req, res) => {
+  co(function*() {
+    const resultData = yield database.getData(req.params.itemid)
+    const { _id, content } = resultData
+    res.json({
+      _id,
+      content,
+    })
+  })
+})
+
+// after
+app.get('/api/item/:itemid', async (req, res) => {
+  const { _id, content } = await database.getData(req.params.itemid)
+  res.json({
+    _id,
+    content,
+  })
+})
+```
+
+#### 作業
+
+把 008 複製一份叫做 009，然後把
