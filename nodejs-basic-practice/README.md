@@ -1,4 +1,3 @@
-
 <details><summary><b> 001 - 用 nodejs 寫一個簡單的 server </b></summary>
 
 ## 用 nodejs 寫一個簡單的 server
@@ -17,7 +16,7 @@
 
 <details><summary><b> 002 - 用 Express 框架寫一個 Hello World server </b></summary>
 
-## 用 Express 框架寫一個 Hello World server
+### 用 Express 框架寫一個 Hello World server
 
 提醒：Node.js 的模組採用的是 `CommonJS` 規範，所以不能寫 `import xxx from 'xxx'`，要寫 `const xxx = require('xxx')`。除此之外，因為 Nodejs 更新很快，所以只要是符合 ES 標準的語法都可以使用，不用 babel 轉譯。
 
@@ -51,7 +50,9 @@ Response
 
 </details>
 
-## 003 - 處理 query string, params 跟 body
+<details><summary><b> 003 - 處理 query string, params 跟 body </b></summary>
+
+### 處理 query string, params 跟 body
 
 從前端要傳資料或是跟後端要資料有幾種方法，比較簡單的是透過 qs(query string), params, body，`GET` 的話沒有 body 所以只能用 qs 或是 params，參考下面的 reference，實作出以下幾個 api
 
@@ -105,9 +106,11 @@ Response
 - [How to access the request body when POSTing using Node.js and Express?](https://stackoverflow.com/questions/11625519/how-to-access-the-request-body-when-posting-using-node-js-and-express)
 - [expressjs/body-parser](https://github.com/expressjs/body-parser)
 
----
+</details>
 
-### 004 - 用 middleware 處理共用邏輯
+<details><summary><b> 004 - 用 middleware 處理共用邏輯 </b></summary>
+
+### 用 middleware 處理共用邏輯
 
 一個網站會提供很多 API，雖然每個 API 彼此之間是獨立的，但有一些邏輯常常會需要共用，這時候我們就會把它寫成 middleware，像 `body-parser` 就是個 middleware，他在 request 還沒道路由階段之前就先幫你把 body 切好，讓你在 controller 中有 `req.body` 可以用。這次我們要練習自己寫 middleware，要做的事情跟 003 大致上相同，只是多回傳一個 `processTime` 代表這個 request 的處理時間(前端等待的時間)
 
@@ -150,9 +153,11 @@ Response
 - [res.locals](http://expressjs.com/en/api.html#res.locals)
 - [res.json()](http://expressjs.com/en/api.html#res.json)
 
----
+</details>
 
-### 005 - 基本 CRUD
+<details><summary><b> 005 - 基本 CRUD </b></summary>
+
+### 基本 CRUD
 
 這次要讓你練習寫一個具有 CRUD 功能的 API server，分別是新增、讀取、更新、刪除，原則上所有的操作都可以分成這四類，這次還不會用到 db，新增一個檔案然後用 fs 去讀寫那個檔案就好了。
 
@@ -248,9 +253,11 @@ Response
 - [Node.js 檔案系統](https://ithelp.ithome.com.tw/articles/10185422)
 - [File System | Node.js v9.1.0 Documentation](https://nodejs.org/api/fs.html)
 
----
+</details>
 
-### 006 - 用 co + generator 做流程控制
+<details><summary><b> 006 - 用 co + generator 做流程控制 </b></summary>
+
+### 用 co + generator 做流程控制
 
 很久沒讓你練習新語法了，這次要練習的是 ES6 的 generator，算是 ES6 比較難的一個 feature，有不懂就直接問我吧因為真的有點難XD，generator 顛覆了以前 function 的寫法，他讓你的 function 可以執行到一半暫停，所以很適合用來作非同步流程控制，在 js 裡面很多 design pattern 也是用 generator 實作的
 
@@ -288,9 +295,11 @@ co(function*() {
 - [快樂玩 ES6 Generator，從 co 起手式開始](http://fred-zone.blogspot.tw/2015/07/es6-generator-co.html)
 - [tj/co](https://github.com/tj/co)
 
----
+</details>
 
-### 007 - Promise VS co + generator
+<details><summary><b> 007 - Promise VS co + generator </b></summary>
+
+### Promise VS co + generator
 
 [https://ajax-practice-server.herokuapp.com/random](https://ajax-practice-server.herokuapp.com/random) <br />
 
@@ -308,9 +317,11 @@ __五次都拿到 `Wait`，所以輸出 `can not get`__
 
 ![](https://i.imgur.com/mexr0nC.gif)
 
----
+</details>
 
-### 008 - mongodb crud
+<details><summary><b> 008 - mongodb crud </b></summary>
+
+### mongodb crud
 
 這次要讓你練習用第三方的 mongo host 完成 CRUD，這樣就不用自己架 mongodb server，先到 [mlab](https://mlab.com/home) 註冊一組帳號，然後新增一個 database，plan 選擇不用錢的 __sandbox__ ，他會給你 0.5 GB 的免費空間，建好 database 之後進去裡面可以拿到一組像是 `mongodb://<dbuser>:<dbpassword>@ds019480.mlab.com:19480/larry-database` 的 mongodb URI，用這個 URI 就可以連到 mlab 然後開始使用。<br />
 
@@ -329,9 +340,11 @@ module.exports = {
 - [Node.JS 串接 MongoDB](https://ithelp.ithome.com.tw/articles/10186483)
 - [MongoDB Node.JS Driver](https://mongodb.github.io/node-mongodb-native/)
 
----
+</details>
 
-### 009 - ES7 async/await
+<details><summary><b> 009 - ES7 async/await </b></summary>
+
+### ES7 async/await
 
 async/await 是 ES7 的新語法，是目前管理非同步流程的最佳解決方案，從 node `7.6.0` 就開始支援，前端的話支援度還不太高，要用在前端的話要用 babel 轉一下<br />
 
@@ -515,3 +528,5 @@ app.get('/api/item/:itemid', async (req, res) => {
 
 - [Promise, generator, async 與 ES6](http://huli.logdown.com/posts/292655-javascript-promise-generator-async-es6)
 - [告別 JavaScript 的 Promise！迎接 Async/Await 的到來](https://jigsawye.com/2016/04/18/understanding-javascript-async-await/)
+
+</details>
