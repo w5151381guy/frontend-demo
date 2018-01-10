@@ -375,3 +375,5 @@ async function foo3(){
 ```
 
 async function 就這麼簡單，簡而言之：如果你回傳 promise，那他的回傳值就是那個 promise，你不回傳 promise，他就幫你把回傳值包裝成 promise
+
+#### 3. 用 await 等待 promise
