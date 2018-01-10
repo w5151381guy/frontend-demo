@@ -427,7 +427,7 @@ async function foo1(){
 }
 
 async function foo2(){
-  co(function*() {
+  return co(function*() {
     try {
       const resultA = yield runA()
       const resultB = yield runB(resultA)
@@ -461,7 +461,9 @@ function insertData(content) {
   return col
     .insertOne({ content })
     .then(result => result.insertedId)
-    .catch(err => console.log(err))
+    .catch(err => {
+      console.log(err)
+    })
 }
 
 // after
@@ -480,7 +482,7 @@ async function insertData2(content) {
 
 // before
 app.get('/api/item/:itemid', (req, res) => {
-  co(function*() {
+  co(function*() {
     const resultData = yield database.getData(req.params.itemid)
     const { _id, content } = resultData
     res.json({
