@@ -356,7 +356,7 @@ async function sleep2(){
 
 `foo2` 是個非同步 function，他的回傳值是個 promise，`foo2().then(res => { console.log(res) }) // 100` <br />
 
-`foo3` 雖然直接 `return 100`，但是剛剛說過 __async function 一定一定一定要回傳 promise，你不回傳 promise 他就會幫你包裝成 promise__ ，所以他這個 100 會被包進 promise。讓 foo3() 是一個 promise 物件，所以 `foo2` 跟 `foo3` 其實是一模一樣的，要這樣用它，`foo3().then(res => { console.log(res) }) // 100` <br />
+`foo3` 雖然直接 `return 100`，但是剛剛說過 __async function 一定一定一定要回傳 promise，你不回傳 promise 他就會幫你包裝成 promise__ ，所以他這個 100 會被包進 promise。讓 `foo3()` 是一個 promise 物件，所以 `foo2` 跟 `foo3` 其實是一模一樣的，要這樣用它，`foo3().then(res => { console.log(res) }) // 100` <br />
 
 ```js
 function foo1(){
@@ -374,3 +374,4 @@ async function foo3(){
 }
 ```
 
+async function 就這麼簡單，簡而言之：如果你回傳 promise，那他的回傳值就是那個 promise，你不回傳 promise，他就幫你把回傳值包裝成 promise
