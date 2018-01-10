@@ -15,9 +15,9 @@
 
 </details>
 
----
+<details><summary><b> 002 - 用 Express 框架寫一個 Hello World server </b></summary>
 
-## 002 - 用 Express 框架寫一個 Hello World server
+## 用 Express 框架寫一個 Hello World server
 
 提醒：Node.js 的模組採用的是 `CommonJS` 規範，所以不能寫 `import xxx from 'xxx'`，要寫 `const xxx = require('xxx')`。除此之外，因為 Nodejs 更新很快，所以只要是符合 ES 標準的語法都可以使用，不用 babel 轉譯。
 
@@ -49,7 +49,7 @@ Response
 - [Hello world example](http://expressjs.com/en/starter/hello-world.html)
 - [Basic routing](http://expressjs.com/en/starter/basic-routing.html)
 
----
+</details>
 
 ## 003 - 處理 query string, params 跟 body
 
