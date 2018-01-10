@@ -409,3 +409,6 @@ async function foo3(){
   console.log('after sleep')
 }
 ```
+
+#### 004. 可讀性對比
+  
