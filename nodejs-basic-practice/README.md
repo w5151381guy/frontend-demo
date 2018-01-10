@@ -342,7 +342,7 @@ module.exports = {
 
 </details>
 
-<details><summary><b> 009 - ES7 async/await </b></summary>
+<details open><summary><b> 009 - ES7 async/await </b></summary>
 
 ### ES7 async/await
 
