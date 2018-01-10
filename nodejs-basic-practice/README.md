@@ -348,6 +348,9 @@ async function sleep2(){
     setTimeout(resolve, 3000)
   })
 }
+
+// sleep1().then(...).catch(...)
+// sleep2().then(...).catch(...)
 ```
 
 #### 2. 如果 async function 裡面沒有回傳 promise 會怎樣
