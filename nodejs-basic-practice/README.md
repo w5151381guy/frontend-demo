@@ -412,7 +412,7 @@ async function foo3(){
 
 #### 004. 錯誤處理
 
-錯誤處理就像寫同步程式碼一樣用 try/catch 就可以了
+錯誤處理就用 try/catch 就可以了，乍看之下好像在寫同步程式碼
 
 ```js
 async function foo1(){
@@ -497,7 +497,7 @@ app.get('/api/item/:itemid', async (req, res) => {
 })
 ```
 
-#### 作業
+### 作業
 
 把 008 複製一份叫做 009，然後把任何非同步操作都宣告成 async function、把 `co + generator` 改成 `async/await`
 
