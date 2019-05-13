@@ -1,0 +1,5 @@
+https://ajax-practice-server.herokuapp.com
+
+GET /todo/api/list
+POST /todo/api/add/:content
+DELETE /todo/api/delete/:index
