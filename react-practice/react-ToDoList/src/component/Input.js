@@ -1,32 +1,29 @@
 import React, { Component } from 'react'
-import api from '../utils/api'
 
 class Input extends Component {
   state = {
-    value: '',
+    data: '',
   }
 
   handleChange = e => {
-    this.setState({ value: e.target.value })
+    this.setState({ data: e.target.value })
   }
 
-  handleKeyPress = async e => {
+  handleKeyPress = e => {
     if (e.which === 13) {
-      const data = this.state.value
-      const result = await api.postData(data)
-      if (result.status === 200) {
-        this.setState({ value: '' })
-        this.props.handleInputValue(data)
-      }
+      const { data } = this.state
+      this.props.postListData(data)
+      this.setState({ data: '' })
     }
   }
 
   render() {
+    const { data } = this.state
     return (
       <input
-        onKeyPress={this.handleKeyPress}
         onChange={this.handleChange}
-        value={this.state.value}
+        onKeyPress={this.handleKeyPress}
+        value={data}
       />
     )
   }

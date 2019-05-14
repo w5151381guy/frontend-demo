@@ -1,50 +1,48 @@
 import React, { Component, Fragment } from 'react'
-import { connect } from 'react-redux'
+import api from '../utils/api'
 import Input from './Input'
 import List from './List'
-import api from '../utils/api'
-import { deleteToDo, addToDo, initToDo } from '../redux/action/action'
-
-const MapStateToProps = state => ({
-  value: state.value,
-})
-
-const MapDispatchToProps = { deleteToDo, addToDo, initToDo }
 
 class App extends Component {
-  initialList = async () => {
-    const data = await api.getData()
-    this.props.initToDo(data)
+  state = {
+    data: [],
   }
 
-  //   handleList = index => {
-  //     let value = this.state.value
-  //     value.splice(index, 1)
-  //     this.setState({ value })
-  //   }
+  initListData = async () => {
+    const data = await api.getData()
+    this.setState({ data })
+  }
 
-  //   handleInputValue = value => {
-  //     let data = this.state.value
-  //     data.push(value)
-  //     this.setState({ value: data })
-  //   }
+  postListData = async data => {
+    const result = await api.postData(data)
+    if (result.status === 200) {
+      const newData = [...this.state.data, data]
+      this.setState({ data: newData })
+    }
+  }
+
+  deleteListData = async index => {
+    const result = await api.deleteData(index)
+    if (result.status === 200) {
+      let newData = [...this.state.data]
+      newData.splice(index, 1)
+      this.setState({ data: newData })
+    }
+  }
 
   componentDidMount() {
-    this.initialList()
+    this.initListData()
   }
 
   render() {
-    console.log(this.props.value)
+    const { data } = this.state
     return (
       <Fragment>
-        <Input handleInputValue={this.props.addToDo} />
-        <List value={this.props.value} handleList={this.props.deleteToDo} />
+        <Input postListData={this.postListData} />
+        <List data={data} deleteData={this.deleteListData} />
       </Fragment>
     )
   }
 }
 
-export default connect(
-  MapStateToProps,
-  MapDispatchToProps
-)(App)
+export default App
