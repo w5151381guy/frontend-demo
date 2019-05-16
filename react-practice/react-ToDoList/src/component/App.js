@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
-import { initData, addData, deleteData } from '../redux/action/action'
+import { initData, postData, deleteData } from '../redux/action/action'
 // import api from '../utils/api'
 import Input from './Input'
 import List from './List'
@@ -9,7 +9,7 @@ const mapStateToProps = state => ({
   data: state.data,
 })
 
-const mapDispatchToProps = { initData, addData, deleteData }
+const mapDispatchToProps = { initData, postData, deleteData }
 
 class App extends Component {
   // state = {
@@ -46,7 +46,7 @@ class App extends Component {
     const { data } = this.props
     return (
       <Fragment>
-        <Input postListData={this.props.addData} />
+        <Input postListData={this.props.postData} />
         <List data={data} deleteData={this.props.deleteData} />
       </Fragment>
     )

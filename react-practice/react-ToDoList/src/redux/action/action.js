@@ -21,7 +21,7 @@ export const initData = () => async dispatch => {
   return dispatch(initToDo(data))
 }
 
-export const addData = data => async dispatch => {
+export const postData = data => async dispatch => {
   const result = await api.postData(data)
   if (result.status === 200) {
     return dispatch(addToDo(data))
