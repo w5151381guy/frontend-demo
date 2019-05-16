@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import { initData, addData, deleteData } from '../redux/action/action'
-import api from '../utils/api'
+// import api from '../utils/api'
 import Input from './Input'
 import List from './List'
 
