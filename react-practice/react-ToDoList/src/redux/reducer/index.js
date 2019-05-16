@@ -1,37 +1,34 @@
-import actionTypes from '../action/actionType'
-
 const initialState = {
-  value: [],
+  data: [],
 }
 
 const reducer = (state = initialState, action) => {
   const { type, payload } = action
   switch (type) {
-    case actionTypes.DELETE_TODO: {
+    case 'DELETE_TODO': {
       const { index } = payload
-      let data = [...state.value]
-      data.splice(index, 1)
+      let newData = [...state.data]
+      newData.splice(index, 1)
       return {
         ...state,
-        value: data,
+        data: newData,
       }
     }
 
-    case actionTypes.ADD_TODO: {
-      const { value } = payload
-      let data = [...state.value]
-      data.push(value)
+    case 'ADD_TODO': {
+      const { data } = payload
+      let newData = [...state.data, data]
       return {
         ...state,
-        value: data,
+        data: newData,
       }
     }
 
-    case actionTypes.INIT_TODO: {
-      const { value } = payload
+    case 'INIT_TODO': {
+      const { data } = payload
       return {
         ...state,
-        value,
+        data,
       }
     }
 

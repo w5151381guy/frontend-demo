@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
+import { Provider } from 'react-redux'
 import MyApp from './component/App'
+import store from './redux/store'
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <Provider store={store}>
         <MyApp />
-      </div>
+      </Provider>
     )
   }
 }
