@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-const Item = props => {
-  return props.datas.map((data, index) => (
+const Item = props =>
+  props.datas.map((data, index) => (
     <div key={index}>
       {data}
       <span
@@ -12,12 +12,11 @@ const Item = props => {
       </span>
     </div>
   ))
-}
 
-class List extends Component {
+class Panel extends Component {
   render() {
     return <Item datas={this.props.data} onClick={this.props.deleteData} />
   }
 }
 
-export default List
+export default Panel

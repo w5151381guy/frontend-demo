@@ -7,8 +7,8 @@ const postApiUrl = `${commonApiUrl}/todo/api/add/`
 const deleteApiUrl = `${commonApiUrl}/todo/api/delete/`
 
 async function getData() {
-  const data = await axios.get(getApiUrl)
-  return data.data
+  const { data } = await axios.get(getApiUrl)
+  return data
 }
 
 async function postData(data) {
