@@ -23,7 +23,7 @@ class App extends Component {
     const { postData, deleteData } = this.props
     return (
       <Fragment>
-        <OnSubmit postListData={postData} />
+        <OnSubmit postData={postData} />
         <Panel data={data} deleteData={deleteData} />
       </Fragment>
     )

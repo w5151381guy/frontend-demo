@@ -12,7 +12,7 @@ class OnSubmit extends Component {
   handleKeyPress = e => {
     if (e.which === 13) {
       const { data } = this.state
-      this.props.postListData(data)
+      this.props.postData(data)
       this.setState({ data: '' })
     }
   }
