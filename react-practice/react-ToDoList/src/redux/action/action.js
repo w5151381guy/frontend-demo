@@ -16,6 +16,16 @@ const initToDo = data => ({
   payload: { data },
 })
 
+const login = result => ({
+  type: actionTypes.POSTLOGIN,
+  payload: { result },
+})
+
+const logout = result => ({
+  type: actionTypes.POSTLOGOUT,
+  payload: { result },
+})
+
 export const initData = () => async dispatch => {
   const data = await api.getData()
   return dispatch(initToDo(data))
@@ -33,4 +43,14 @@ export const deleteData = index => async dispatch => {
   if (result.status === 200) {
     return dispatch(deleteToDo(index))
   }
+}
+
+export const postLogin = (account, password) => async dispatch => {
+  const result = await api.postLogin(account, password)
+  return dispatch(login(result))
+}
+
+export const postLogout = () => async dispatch => {
+  const result = await api.postLogout()
+  return dispatch(logout(result))
 }

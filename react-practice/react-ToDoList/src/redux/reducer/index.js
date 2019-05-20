@@ -2,6 +2,7 @@ import actionTypes from '../action/actionType'
 
 const initialState = {
   data: [],
+  isLogin: false,
 }
 
 const reducer = (state = initialState, action) => {
@@ -32,6 +33,25 @@ const reducer = (state = initialState, action) => {
         ...state,
         data,
       }
+    }
+
+    case actionTypes.POSTLOGIN: {
+      const { result } = payload
+      if (result.status === 200) {
+        return {
+          ...state,
+          isLogin: true,
+        }
+      } else {
+        return {
+          ...state,
+          isLogin: false,
+        }
+      }
+    }
+
+    case actionTypes.POSTLOGOUT: {
+      return { ...state, isLogin: false }
     }
 
     default:
