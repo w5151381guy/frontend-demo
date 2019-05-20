@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import { initData, postData, deleteData } from '../redux/action/action'
 import OnSubmit from './OnSubmit'
-import Panel from './Panel'
+import List from './List'
 
 const mapStateToProps = state => ({
   data: state.data,
@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <Fragment>
         <OnSubmit postData={postData} />
-        <Panel data={data} deleteData={deleteData} />
+        <List data={data} deleteData={deleteData} />
       </Fragment>
     )
   }

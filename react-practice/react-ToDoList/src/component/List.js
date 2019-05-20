@@ -13,10 +13,10 @@ const Item = props =>
     </div>
   ))
 
-class Panel extends Component {
+class List extends Component {
   render() {
     return <Item datas={this.props.data} onClick={this.props.deleteData} />
   }
 }
 
-export default Panel
+export default List
