@@ -4,9 +4,7 @@ const Item = props => {
   const { content, index, isLogin } = props
   let htmlElement
   let [left, right] = content.split('x')
-  if (right === undefined) right = ''
-  const regexp = /[0-9]+/
-  if (left.match(regexp) && right.match(regexp)) {
+  if (!isNaN(left) && !isNaN(right)) {
     htmlElement = <img src={`https://fakeimg.pl/${content}`} height={100} />
   } else {
     htmlElement = content
