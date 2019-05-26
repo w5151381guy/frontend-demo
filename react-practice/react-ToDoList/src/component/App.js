@@ -84,7 +84,7 @@ class App extends Component {
           isLogin={isLogin}
           checkLogout={postLogout}
         />
-        <Input handleValue={this.handleValue} />
+        <Input onSubmit={this.handleValue} />
         <List data={data} deleteData={deleteData} isLogin={isLogin} />
       </Fragment>
     )

@@ -12,12 +12,8 @@ class Input extends Component {
   handleKeyPress = e => {
     if (e.which === 13) {
       const { data } = this.state
-      this.props.handleValue(data)
+      this.props.onSubmit(data)
       this.setState({ data: '' })
-      // if (this.props.handleValue(data)) {
-      //   this.props.postData(data)
-      //   this.setState({ data: '' })
-      // }
     }
   }
 

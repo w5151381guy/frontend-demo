@@ -3,8 +3,10 @@ import React, { Component } from 'react'
 const Item = props => {
   const { content, index, isLogin } = props
   let htmlElement
-  const [left, right] = content.split('x')
-  if (parseInt(left) == left && parseInt(right) == right) {
+  let [left, right] = content.split('x')
+  if (right === undefined) right = ''
+  const regexp = /[0-9]+/
+  if (left.match(regexp) && right.match(regexp)) {
     htmlElement = <img src={`https://fakeimg.pl/${content}`} height={100} />
   } else {
     htmlElement = content
@@ -16,7 +18,6 @@ const Item = props => {
         <span
           style={{ color: 'red', cursor: 'pointer' }}
           onClick={() => props.onClick(index)}>
-          {' '}
           delete
         </span>
       ) : (
