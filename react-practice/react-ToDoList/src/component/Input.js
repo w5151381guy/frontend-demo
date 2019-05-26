@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class OnSubmit extends Component {
+class Input extends Component {
   state = {
     data: '',
   }
@@ -33,4 +33,4 @@ class OnSubmit extends Component {
   }
 }
 
-export default OnSubmit
+export default Input

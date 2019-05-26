@@ -7,7 +7,7 @@ import {
   postLogin,
   postLogout,
 } from '../redux/action/action'
-import OnSubmit from './OnSubmit'
+import Input from './Input'
 import List from './List'
 import LoginForm from './LoginForm'
 
@@ -84,7 +84,7 @@ class App extends Component {
           isLogin={isLogin}
           checkLogout={postLogout}
         />
-        <OnSubmit handleValue={this.handleValue} />
+        <Input handleValue={this.handleValue} />
         <List data={data} deleteData={deleteData} isLogin={isLogin} />
       </Fragment>
     )
