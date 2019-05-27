@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import validator from 'validator'
 
 const Item = props => {
   const { content, index, isLogin } = props
   let htmlElement
   let [left, right] = content.split('x')
-  if (!isNaN(left) && !isNaN(right)) {
+  if (validator.isInt(left) && validator.isInt(right)) {
     htmlElement = <img src={`https://fakeimg.pl/${content}`} height={100} />
   } else {
     htmlElement = content
